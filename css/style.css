@@ -30,10 +30,18 @@
 }
 
 /* Estilo de imagen de logo */
-.logo {
-  max-width: 160px;
-  height: auto;
-  border-radius: 50%;
-  border: 2px solid var(--color-dorado);
-  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    /* Fondo mármol oscuro con destellos dorados */
+    background-color: #0b0b0d;
+    background-image: 
+        radial-gradient(circle at 20% 20%, rgba(212, 175, 55, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(212, 175, 55, 0.06) 0%, transparent 50%),
+        linear-gradient(135deg, #09090b 0%, #16161a 50%, #0d0d10 100%);
+    background-attachment: fixed;
 }

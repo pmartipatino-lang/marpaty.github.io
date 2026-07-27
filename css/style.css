@@ -1,0 +1,39 @@
+/* Estilo para las imágenes dentro de las tarjetas */
+.producto-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+/* Sección de cualidades (Resistencia, Pintado, Presentación) */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid var(--color-dorado);
+  padding: 1.2rem;
+  text-align: left;
+  border-radius: 0 10px 10px 0;
+}
+
+.feature-card h3 {
+  color: var(--color-dorado-brillo);
+  margin-top: 0;
+}
+
+/* Estilo de imagen de logo */
+.logo {
+  max-width: 160px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid var(--color-dorado);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}

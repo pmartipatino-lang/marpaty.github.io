@@ -8,7 +8,6 @@
 
 body {
     background-color: #050505;
-    /* Fondo negro con patrón de vetas doradas elegantes estilo mármol */
     background-image: 
         radial-gradient(circle at 50% 30%, rgba(212, 175, 55, 0.15) 0%, transparent 60%),
         repeating-linear-gradient(45deg, rgba(212, 175, 55, 0.05) 0px, rgba(212, 175, 55, 0.05) 2px, transparent 2px, transparent 40px),
@@ -30,7 +29,6 @@ header {
     backdrop-filter: blur(5px);
 }
 
-/* El logo toma protagonismo como título principal */
 .logo-header {
     display: flex;
     justify-content: center;
@@ -39,8 +37,8 @@ header {
 }
 
 .logo-header img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #d4af37;
@@ -88,7 +86,7 @@ nav a:hover {
 }
 
 main {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -130,30 +128,49 @@ h2 {
     margin-bottom: 10px;
 }
 
+/* Grilla para la Galería de Productos */
 .catalogo-grid {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+    justify-items: center;
 }
 
 .producto-card {
     background: rgba(20, 20, 20, 0.9);
     padding: 15px;
     border-radius: 12px;
-    max-width: 350px;
+    width: 100%;
+    max-width: 300px;
     border: 1px solid #d4af37;
     box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(212, 175, 55, 0.35);
 }
 
 .producto-card img {
     width: 100%;
+    height: 250px;
+    object-fit: cover;
     border-radius: 8px;
     margin-bottom: 15px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
 }
 
 .producto-card h3 {
     color: #d4af37;
     margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.producto-card p {
+    font-size: 0.95rem;
+    color: #ccc;
 }
 
 .btn-whatsapp {

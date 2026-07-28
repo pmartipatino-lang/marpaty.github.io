@@ -8,10 +8,10 @@
 
 body {
     background-color: #050505;
-    background-image: 
-        radial-gradient(circle at 50% 30%, rgba(212, 175, 55, 0.15) 0%, transparent 60%),
-        repeating-linear-gradient(45deg, rgba(212, 175, 55, 0.05) 0px, rgba(212, 175, 55, 0.05) 2px, transparent 2px, transparent 40px),
-        repeating-linear-gradient(-45deg, rgba(212, 175, 55, 0.03) 0px, rgba(212, 175, 55, 0.03) 1px, transparent 1px, transparent 30px);
+    background-image: url('logo2.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     color: #e0e0e0;
     line-height: 1.6;
@@ -19,70 +19,49 @@ body {
     padding: 20px;
 }
 
-header {
-    padding: 30px 20px;
-    background: rgba(10, 10, 10, 0.85);
-    border-radius: 15px;
-    margin-bottom: 30px;
-    border: 1px solid #d4af37;
-    box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
-    backdrop-filter: blur(5px);
-}
-
-.logo-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.logo-header img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #d4af37;
-    box-shadow: 0 0 25px rgba(212, 175, 55, 0.5);
-    transition: transform 0.3s ease;
-}
-
-.logo-header img:hover {
-    transform: scale(1.03);
-}
-
-.slogan {
-    color: #d4af37;
-    font-size: 1.2rem;
-    font-style: italic;
-    letter-spacing: 1px;
-    margin-top: 10px;
+header.header-banner {
+    padding: 20px 0;
+    background: transparent;
     margin-bottom: 20px;
-    text-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+}
+
+/* La imagen completa sin círculos ni marcos */
+.banner-img {
+    max-width: 100%;
+    width: 450px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+    filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.2));
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     flex-wrap: wrap;
+    margin-top: 15px;
 }
 
 nav a {
-    color: #f0e68c;
+    color: #d4af37;
     text-decoration: none;
     font-weight: bold;
-    padding: 8px 16px;
-    border: 1px solid transparent;
+    font-size: 1.1rem;
+    padding: 8px 18px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 20px;
+    background: rgba(10, 10, 10, 0.6);
+    backdrop-filter: blur(5px);
     transition: all 0.3s ease;
 }
 
 nav a:hover {
     color: #fff;
     border-color: #d4af37;
-    border-radius: 5px;
-    background: rgba(212, 175, 55, 0.15);
-    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+    background: rgba(212, 175, 55, 0.25);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
 }
 
 main {
@@ -91,13 +70,13 @@ main {
 }
 
 section {
-    background: rgba(12, 12, 12, 0.85);
+    background: rgba(12, 12, 12, 0.82);
     padding: 30px;
     border-radius: 15px;
     margin-bottom: 30px;
-    border: 1px solid rgba(212, 175, 55, 0.4);
+    border: 1px solid rgba(212, 175, 55, 0.35);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(6px);
 }
 
 h2 {
@@ -115,7 +94,7 @@ h2 {
 }
 
 .feature-card {
-    background: rgba(20, 20, 20, 0.9);
+    background: rgba(20, 20, 20, 0.85);
     padding: 20px;
     border-radius: 10px;
     border-left: 3px solid #d4af37;
@@ -128,7 +107,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Grilla para la Galería de Productos */
+/* Grilla para la Galería */
 .catalogo-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -138,7 +117,7 @@ h2 {
 }
 
 .producto-card {
-    background: rgba(20, 20, 20, 0.9);
+    background: rgba(20, 20, 20, 0.85);
     padding: 15px;
     border-radius: 12px;
     width: 100%;
@@ -194,6 +173,6 @@ h2 {
 
 footer {
     margin-top: 40px;
-    color: #888;
+    color: #aaa;
     font-size: 0.9rem;
 }

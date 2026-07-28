@@ -1,0 +1,155 @@
+/* Estilos Base MarPaty */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    background-image: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #0d0d0d 100%);
+    color: #e0e0e0;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    padding: 40px 20px;
+    background: rgba(20, 20, 20, 0.8);
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border: 1px solid #d4af37;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+}
+
+.logo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #d4af37;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #d4af37;
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.slogan {
+    color: #cccccc;
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    border-color: #d4af37;
+    border-radius: 5px;
+    background: rgba(212, 175, 55, 0.1);
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section {
+    background: rgba(20, 20, 20, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border: 1px solid #333;
+}
+
+h2 {
+    color: #d4af37;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.feature-card {
+    background: #151515;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 3px solid #d4af37;
+    text-align: left;
+}
+
+.feature-card h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.catalogo-grid {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.producto-card {
+    background: #151515;
+    padding: 15px;
+    border-radius: 12px;
+    max-width: 350px;
+    border: 1px solid #d4af37;
+}
+
+.producto-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #25d366;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1eb954;
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 40px;
+    color: #777;
+    font-size: 0.9rem;
+}

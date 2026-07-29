@@ -311,3 +311,14 @@ h2 {
 }
 
 footer { margin-top: 20px; color: #777; font-size: 0.85rem; }
+/* Texto de Ubicación y Envíos */
+.ubicacion-envios {
+    color: #ffd700;
+    font-size: 1.05rem;
+    margin: 12px 0 18px 0;
+    background-color: rgba(255, 215, 0, 0.1);
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+}

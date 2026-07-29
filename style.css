@@ -42,7 +42,7 @@ nav ul {
     margin-top: 20px;
 }
 
-nav a {
+nav a, nav a:visited {
     color: #ffd700;
     text-decoration: none;
     font-weight: bold;
@@ -51,6 +51,7 @@ nav a {
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.75);
     transition: all 0.3s ease;
+    display: inline-block;
 }
 
 nav a:hover {
@@ -140,42 +141,60 @@ h2 {
     font-weight: bold;
 }
 
-.badge-pop {
-    background-color: #ffd700;
-    color: #000;
+.badge-pop { background-color: #ffd700; color: #000; }
+.badge-gold { background-color: #e67e22; color: #fff; }
+
+.plan-card h3 { color: #fff; margin: 10px 0 5px 0; }
+.plan-material { color: #ffd700; font-size: 0.85rem; margin-bottom: 12px; font-weight: bold; }
+.plan-card ul { list-style: none; font-size: 0.9rem; }
+.plan-card li { margin-bottom: 8px; color: #ccc; }
+
+/* CARRUSEL DESLIZABLE */
+.carrusel-contenedor {
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
-.badge-gold {
-    background-color: #e67e22;
-    color: #fff;
+.carrusel-track {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 5px;
+    scrollbar-width: none;
 }
 
-.plan-card h3 {
-    color: #fff;
-    margin: 10px 0 5px 0;
-}
+.carrusel-track::-webkit-scrollbar { display: none; }
 
-.plan-material {
+.card-carrusel { flex: 0 0 260px; }
+
+.btn-carrusel {
+    background-color: rgba(0, 0, 0, 0.85);
     color: #ffd700;
-    font-size: 0.85rem;
-    margin-bottom: 12px;
-    font-weight: bold;
+    border: 1px solid #ffd700;
+    font-size: 1.4rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s ease;
 }
 
-.plan-card ul {
-    list-style: none;
-    font-size: 0.9rem;
+.btn-carrusel:hover {
+    background-color: #ffd700;
+    color: #121212;
 }
 
-.plan-card li {
-    margin-bottom: 8px;
-    color: #ccc;
-}
+.btn-carrusel.prev { left: -15px; }
+.btn-carrusel.next { right: -15px; }
 
 /* Grilla de Catálogo */
 .catalogo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
 }
 
@@ -198,7 +217,6 @@ h2 {
     transform: translateY(-3px);
 }
 
-/* IMÁGENES CORREGIDAS PARA MOSTRAR EL MODELO ENTERO */
 .producto-card img {
     width: 100%;
     height: 260px;
@@ -209,49 +227,73 @@ h2 {
     padding: 8px;
 }
 
-.producto-card h3 {
-    color: #ffd700;
-    font-size: 1.1rem;
-    margin-bottom: 6px;
+.producto-card h3 { color: #ffd700; font-size: 1.1rem; margin-bottom: 6px; }
+.producto-card p { font-size: 0.88rem; color: #bbb; }
+.producto-destacado-card { max-width: 320px; }
+
+/* TARJETA ANTES & DESPUÉS (CABALLO UNIFICADO) */
+.comparativa-imgs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
 }
 
-.producto-card p {
-    font-size: 0.88rem;
-    color: #bbb;
+.img-box {
+    position: relative;
+    width: 50%;
 }
 
-.producto-destacado-card {
-    max-width: 320px;
+.img-box img {
+    height: 180px;
+    margin-bottom: 0;
 }
 
-/* Botones Principales */
-.btn-eventos, .btn-whatsapp {
-    display: inline-block;
-    padding: 12px 25px;
-    border-radius: 25px;
+.label-proceso, .label-final {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    font-size: 0.65rem;
     font-weight: bold;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    margin-top: 10px;
+    padding: 2px 6px;
+    border-radius: 6px;
+    z-index: 2;
+    text-transform: uppercase;
 }
 
-.btn-eventos {
-    background-color: #e67e22;
-    color: #ffffff;
+.label-proceso { background-color: #e67e22; color: #fff; }
+.label-final { background-color: #27ae60; color: #fff; }
+
+/* CORRECCIÓN DE BOTONES */
+.btn-eventos, .btn-eventos:visited, .btn-whatsapp, .btn-whatsapp:visited {
+    display: inline-block !important;
+    padding: 12px 25px !important;
+    border-radius: 25px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    margin-top: 10px !important;
+    text-align: center !important;
+}
+
+.btn-eventos, .btn-eventos:visited {
+    background-color: #e67e22 !important;
+    color: #ffffff !important;
+    border: 1px solid #d35400 !important;
 }
 
 .btn-eventos:hover {
-    background-color: #d35400;
+    background-color: #d35400 !important;
+    transform: scale(1.03);
 }
 
-.btn-whatsapp {
-    background-color: #25d366;
-    color: #ffffff;
-    font-size: 1.05rem;
+.btn-whatsapp, .btn-whatsapp:visited {
+    background-color: #25d366 !important;
+    color: #ffffff !important;
+    font-size: 1.05rem !important;
 }
 
 .btn-whatsapp:hover {
-    background-color: #1ebc57;
+    background-color: #1ebc57 !important;
 }
 
 /* Copos de Nieve */
@@ -265,13 +307,7 @@ h2 {
 }
 
 @keyframes caer {
-    to {
-        transform: translateY(105vh) rotate(360deg);
-    }
+    to { transform: translateY(105vh) rotate(360deg); }
 }
 
-footer {
-    margin-top: 20px;
-    color: #777;
-    font-size: 0.85rem;
-}
+footer { margin-top: 20px; color: #777; font-size: 0.85rem; }

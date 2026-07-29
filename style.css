@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #121212;
+    background-image: url('mariposas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #e0e0e0;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header & Banner */
+header.header-banner {
+    padding: 10px 0 20px 0;
+}
+
+.banner-img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+nav a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: 1px solid #ffd700;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.75);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ffd700;
+    color: #121212;
+}
+
+/* Layout Principal */
+main {
+    max-width: 1000px;
+    margin: 25px auto;
+}
+
+section {
+    background-color: rgba(18, 18, 18, 0.90);
+    padding: 35px 25px;
+    border-radius: 16px;
+    margin-bottom: 35px;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: #ffd700;
+    margin-bottom: 8px;
+    font-size: 1.8rem;
+}
+
+.subtitulo-seccion {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+/* Botón Navidad */
+.btn-navidad {
+    background: linear-gradient(135deg, #c0392b, #8e44ad);
+    color: #ffffff;
+    border: 2px solid #ffd700;
+    padding: 12px 24px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-navidad:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+/* Grilla de Planes */
+.planes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.plan-card {
+    background-color: rgba(30, 30, 30, 0.8);
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.plan-destacado {
+    border: 2px solid #ffd700;
+    background-color: rgba(40, 35, 10, 0.85);
+}
+
+.plan-premium {
+    border: 2px solid #e67e22;
+    background-color: rgba(40, 25, 10, 0.85);
+}
+
+.badge-plan {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    border-radius: 10px;
+    background-color: #444;
+    color: #fff;
+    font-weight: bold;
+}
+
+.badge-pop {
+    background-color: #ffd700;
+    color: #000;
+}
+
+.badge-gold {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+.plan-card h3 {
+    color: #fff;
+    margin: 10px 0 5px 0;
+}
+
+.plan-material {
+    color: #ffd700;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.plan-card ul {
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+.plan-card li {
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+/* Grilla de Catálogo */
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.catalogo-grid.single-item {
+    display: flex;
+    justify-content: center;
+}
+
+.producto-card {
+    background-color: rgba(25, 25, 25, 0.85);
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: left;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.producto-card:hover {
+    border-color: #ffd700;
+    transform: translateY(-3px);
+}
+
+/* IMÁGENES CORREGIDAS PARA MOSTRAR EL MODELO ENTERO */
+.producto-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 8px;
+}
+
+.producto-card h3 {
+    color: #ffd700;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+.producto-card p {
+    font-size: 0.88rem;
+    color: #bbb;
+}
+
+.producto-destacado-card {
+    max-width: 320px;
+}
+
+/* Botones Principales */
+.btn-eventos, .btn-whatsapp {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-eventos {
+    background-color: #e67e22;
+    color: #ffffff;
+}
+
+.btn-eventos:hover {
+    background-color: #d35400;
+}
+
+.btn-whatsapp {
+    background-color: #25d366;
+    color: #ffffff;
+    font-size: 1.05rem;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebc57;
+}
+
+/* Copos de Nieve */
+.copo-nieve {
+    position: fixed;
+    top: -20px;
+    color: #fff;
+    pointer-events: none;
+    z-index: 9999;
+    animation: caer linear forwards;
+}
+
+@keyframes caer {
+    to {
+        transform: translateY(105vh) rotate(360deg);
+    }
+}
+
+footer {
+    margin-top: 20px;
+    color: #777;
+    font-size: 0.85rem;
+}

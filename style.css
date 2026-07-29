@@ -8,7 +8,6 @@
 
 body {
     background-color: #050505;
-    /* Fondo fijo de mariposas */
     background-image: url('mariposas.jpg');
     background-size: cover;
     background-position: center;
@@ -18,6 +17,7 @@ body {
     line-height: 1.6;
     text-align: center;
     padding: 20px;
+    overflow-x: hidden;
 }
 
 header.header-banner {
@@ -26,7 +26,6 @@ header.header-banner {
     margin-bottom: 20px;
 }
 
-/* Banner alargado del logo en la parte superior */
 .banner-img {
     width: 100%;
     max-width: 650px;
@@ -88,6 +87,47 @@ h2 {
     text-shadow: 0 0 8px rgba(212, 175, 55, 0.2);
 }
 
+/* Botón de Navidad */
+.navidad-container {
+    margin-top: 25px;
+}
+
+.btn-navidad {
+    background: linear-gradient(135deg, #c0392b, #8e44ad);
+    color: #fff;
+    border: 2px solid #d4af37;
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+    transition: all 0.3s ease;
+}
+
+.btn-navidad:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.8);
+    background: linear-gradient(135deg, #e74c3c, #9b59b6);
+}
+
+/* Copos de Nieve Animados */
+.copo-nieve {
+    position: fixed;
+    top: -20px;
+    color: #fff;
+    text-shadow: 0 0 5px #d4af37, 0 0 10px #fff;
+    pointer-events: none;
+    z-index: 9999;
+    animation: caer linear forwards;
+}
+
+@keyframes caer {
+    to {
+        transform: translateY(105vh) rotate(360deg);
+    }
+}
+
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -109,7 +149,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Grilla para la Galería */
+/* Grilla Galería */
 .catalogo-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -173,6 +213,11 @@ h2 {
     transform: scale(1.05);
 }
 
+footer {
+    margin-top: 40px;
+    color: #aaa;
+    font-size: 0.9rem;
+}
 footer {
     margin-top: 40px;
     color: #aaa;

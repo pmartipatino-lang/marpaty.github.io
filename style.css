@@ -32,7 +32,7 @@ header.header-banner {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
 }
 
-/* Navegación Original */
+/* Navegación */
 nav ul {
     list-style: none;
     display: flex;
@@ -85,7 +85,7 @@ h2 {
     margin-bottom: 25px;
 }
 
-/* Botón Navidad Original */
+/* Botón Navidad */
 .btn-navidad {
     background: linear-gradient(135deg, #c0392b, #8e44ad);
     color: #ffffff;
@@ -175,7 +175,7 @@ h2 {
 /* Grilla de Catálogo */
 .catalogo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 20px;
 }
 
@@ -198,12 +198,15 @@ h2 {
     transform: translateY(-3px);
 }
 
+/* IMÁGENES CORREGIDAS PARA MOSTRAR EL MODELO ENTERO */
 .producto-card img {
     width: 100%;
-    height: 220px;
-    object-fit: cover;
+    height: 260px;
+    object-fit: contain;
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 8px;
     margin-bottom: 12px;
+    padding: 8px;
 }
 
 .producto-card h3 {
@@ -221,7 +224,7 @@ h2 {
     max-width: 320px;
 }
 
-/* Botones Principales Originales */
+/* Botones Principales */
 .btn-eventos, .btn-whatsapp {
     display: inline-block;
     padding: 12px 25px;

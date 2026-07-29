@@ -3,249 +3,281 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MarPaty | Diseños de Ensueños</title>
+    <title>MarPaty | Arte & Esculturas 3D</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Fuente moderna desde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Encabezado con Banner y Navegación Flotante -->
     <header class="header-banner">
-        <!-- Banner del logo superior -->
-        <img src="marpatyjpg.jpg" alt="MarPaty Diseños de Ensueños" class="banner-img">
+        <div class="logo-container">
+            <img src="marpatyjpg.jpg" alt="MarPaty Diseños de Ensueños" class="banner-img">
+        </div>
         
-        <nav>
+        <nav class="nav-flotante">
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#opciones">Opciones</a></li>
-                <li><a href="#especiales">Especiales</a></li>
-                <li><a href="#eventos">Fiestas & Cumples</a></li>
-                <li><a href="#graduados">Graduados</a></li>
-                <li><a href="#galeria">Trabajos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#inicio">✨ Inicio</a></li>
+                <li><a href="#opciones">💎 Líneas</a></li>
+                <li><a href="#especiales">🎁 Especiales</a></li>
+                <li><a href="#eventos">🎉 Fiestas</a></li>
+                <li><a href="#graduados">🎓 Graduados</a></li>
+                <li><a href="#galeria">📸 Galería</a></li>
+                <li><a href="#contacto" class="nav-btn-highlight">💬 Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="inicio" class="hero">
-            <h2>Esculturas 3D & Cajas Temáticas Personalizadas</h2>
-            <p>
-                Transformamos ideas y personajes en piezas artísticas coleccionables. 
-                Cada trabajo es único, elaborado con máxima dedicación y detalle.
+        <!-- Hero Section -->
+        <section id="inicio" class="hero hero-creative">
+            <div class="hero-badge">✨ Arte en Papel & Cartón Reforzado</div>
+            <h1 class="titulo-gradiente">Transformamos Ideas en Esculturas 3D</h1>
+            <p class="hero-desc">
+                Piezas únicas hechas a mano, personajes de colección, souvenirs y figuras personalizadas para eventos inolvidables.
             </p>
             
-            <!-- Botón Especial de Navidad -->
             <div class="navidad-container">
-                <button id="btnNavidad" class="btn-navidad" onclick="crearLluviaNieve()">
+                <button id="btnNavidad" class="btn-navidad pulse-effect" onclick="crearLluviaNieve()">
                     🎄 Especial Navidad - Próximamente ❄️
                 </button>
             </div>
         </section>
 
-        <!-- Sección de Líneas de Productos -->
+        <!-- Líneas de Productos / Precios -->
         <section id="opciones" class="opciones-section">
-            <h2>Nuestras Líneas de Productos</h2>
-            <p class="subtitulo-seccion">Elige el tipo de acabado que mejor se adapte a tu proyecto o regalo:</p>
+            <div class="section-title">
+                <h2>Nuestras Líneas de Productos</h2>
+                <p class="subtitulo-seccion">Elige la terminación ideal para tu espacio o festejo</p>
+            </div>
             
             <div class="planes-grid">
-                <!-- Opción 1: Económica -->
-                <div class="plan-card">
+                <div class="plan-card glass-card">
                     <span class="badge-plan">Línea Accesible</span>
                     <h3>Económico</h3>
-                    <p class="plan-material">Material: Opalina</p>
+                    <p class="plan-material">📄 Papel Opalina de alto gramaje</p>
                     <ul>
-                        <li>✨ Estructura armada en papel opalina de alto gramaje.</li>
-                        <li>🎨 Diseños ligeros y vistosos.</li>
-                        <li>⏱️ Elaboración rápida.</li>
-                        <li>💡 Ideal para eventos o decoración ligera.</li>
+                        <li>✨ Diseños livianos y llenos de color.</li>
+                        <li>⚡ Elaboración súper rápida.</li>
+                        <li>💡 Ideal para decoración de eventos y regalos.</li>
                     </ul>
                 </div>
 
-                <!-- Opción 2: Artesanal / Reforzada -->
-                <div class="plan-card plan-destacado">
-                    <span class="badge-plan badge-pop">Más Pedido</span>
+                <div class="plan-card glass-card plan-destacado glow-gold">
+                    <span class="badge-plan badge-pop">🔥 El más elegido</span>
                     <h3>Cartón Reforzado</h3>
-                    <p class="plan-material">Material: Cartón duro + Pintura a mano</p>
+                    <p class="plan-material">🖌️ Cartón Duro + Pintado a Mano</p>
                     <ul>
-                        <li>🛡️ Estructura reforzada con gran dureza y durabilidad.</li>
-                        <li>🖌️ Pintado totalmente a mano con acabados y sombreados.</li>
-                        <li>⭐ Excelente relación calidad-precio.</li>
-                        <li>🎁 Resiste el paso del tiempo manteniendo su forma.</li>
+                        <li>🛡️ Estructura de alta resistencia y larga duración.</li>
+                        <li>🎨 Pintado artesanal con detalles y sombreados.</li>
+                        <li>⭐ Relación calidad-precio insuperable.</li>
                     </ul>
                 </div>
 
-                <!-- Opción 3: Premium / Colección -->
-                <div class="plan-card plan-premium">
-                    <span class="badge-plan badge-gold">👑 Edición Premium</span>
+                <div class="plan-card glass-card plan-premium glow-premium">
+                    <span class="badge-plan badge-gold">👑 Edición Coleccionista</span>
                     <h3>De Colección</h3>
-                    <p class="plan-material">Encargo especial (Hasta 3 semanas de anticipación)</p>
+                    <p class="plan-material">🎁 Pack De Lujo Personalizado</p>
                     <ul>
-                        <li>📦 <strong>Caja temática personalizada</strong> a medida.</li>
-                        <li>🖌️ Pieza con máximo nivel de detalle y acabado superior.</li>
-                        <li>🔑 <strong>Regalo sorpresa:</strong> Llavero temático incluido.</li>
-                        <li>📖 <strong>Cómic / Historieta exclusiva</strong> personalizada y armada a mano.</li>
-                        <li>📜 Certificado y presentación de lujo.</li>
+                        <li>📦 <strong>Caja temática a medida</strong> con diseño exclusivo.</li>
+                        <li>🖌️ Acabados de pintura premium y máximo detalle.</li>
+                        <li>🔑 <strong>Llavero sorpresa + Cómic personalizado</strong> armado a mano.</li>
+                        <li>📜 Certificado de autenticidad.</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN ESPECIALES: Regalos y Novedades -->
+        <!-- SECCIÓN ESPECIALES -->
         <section id="especiales" class="especiales-section">
-            <h2>🎁 Regalos Especiales & Piezas Únicas</h2>
-            <p class="subtitulo-seccion">Creaciones originales diseñadas para sorprender:</p>
+            <div class="section-title">
+                <h2>🎁 Regalos Especiales & Piezas Únicas</h2>
+                <p class="subtitulo-seccion">Diseños creativos fuera de lo común</p>
+            </div>
 
             <div class="catalogo-grid">
-                <article class="producto-card">
-                    <img src="Screenshot_2.png" alt="Trofeo Especial para Mamá #1">
-                    <h3>Trofeo Especial para Mamá</h3>
-                    <p>🥇 Regalo temático "#1 MAMÁ" con diseño en tono dorado y base reforzada. ¡El reconocimiento ideal!</p>
+                <article class="producto-card card-interactive">
+                    <div class="img-wrapper">
+                        <img src="Screenshot_2.png" alt="Trofeo Especial para Mamá #1">
+                    </div>
+                    <div class="card-content">
+                        <h3>Trofeo para Mamá #1</h3>
+                        <p>🥇 Reconocimiento dorado con base reforzada. ¡El mejor regalo para ella!</p>
+                    </div>
                 </article>
 
-                <article class="producto-card">
-                    <img src="Screenshot_3.png" alt="Portavinos Busto Joker">
-                    <h3>Portavinos Busto Joker</h3>
-                    <p>🍷 Busto decorativo para portavinos de El Guasón. Elegancia y carácter coleccionable para tu mesa o barra.</p>
+                <article class="producto-card card-interactive">
+                    <div class="img-wrapper">
+                        <img src="Screenshot_3.png" alt="Portavinos Busto Joker">
+                    </div>
+                    <div class="card-content">
+                        <h3>Portavinos Busto Joker</h3>
+                        <p>🍷 Busto decorativo funcional para botellas. Un toque villano y elegante.</p>
+                    </div>
                 </article>
 
-                <article class="producto-card">
-                    <img src="Screenshot_5.png" alt="Escultura Conejo Lector">
-                    <h3>Conejo Lector Humorístico</h3>
-                    <p>📖 Figura decorativa súper divertida en estilo low poly. Un toque original y simpático para tus espacios.</p>
+                <article class="producto-card card-interactive">
+                    <div class="img-wrapper">
+                        <img src="Screenshot_5.png" alt="Escultura Conejo Lector">
+                    </div>
+                    <div class="card-content">
+                        <h3>Conejo Lector Humor</h3>
+                        <p>📖 Escultura divertida low-poly. Ideal para libreros o baños.</p>
+                    </div>
                 </article>
             </div>
         </section>
 
-        <!-- SECCIÓN: Cumpleaños y Eventos -->
+        <!-- SECCIÓN: Fiestas y Cumpleaños -->
         <section id="eventos" class="eventos-section">
-            <h2>🎉 Especial Cumpleaños & Fiestas Temáticas</h2>
-            <p class="subtitulo-seccion">¡Dale vida a la mesa principal o al Candy Bar con personajes 3D impactantes!</p>
+            <div class="section-title">
+                <h2>🎉 Especial Cumpleaños & Fiestas</h2>
+                <p class="subtitulo-seccion">Ambientaciones y centros de mesa inolvidables</p>
+            </div>
 
             <div class="catalogo-grid">
-                <article class="producto-card">
-                    <img src="Screenshot_4.png" alt="Bebé en Paracaídas para Baby Shower o Nacimiento">
-                    <h3>Adorno Bebé en Paracaídas</h3>
-                    <p>👶🍼 Ideal para decoración de nacimientos, baby shower y centros de mesa. ¡Un detalle tierno e inolvidable!</p>
+                <article class="producto-card card-interactive">
+                    <div class="img-wrapper">
+                        <img src="Screenshot_4.png" alt="Bebé en Paracaídas">
+                    </div>
+                    <div class="card-content">
+                        <h3>Bebé en Paracaídas</h3>
+                        <p>👶🍼 Centro de mesa súper tierno para Baby Showers y nacimientos.</p>
+                    </div>
                 </article>
 
-                <article class="producto-card">
-                    <img src="Screenshot_8.png" alt="Mickey Mouse Safari 3D">
-                    <h3>Mickey Mouse Safari</h3>
-                    <p>🦁 Escultura 3D temática de explorador. Perfecta para ambientar cumpleaños y fiestas temáticas.</p>
+                <article class="producto-card card-interactive">
+                    <div class="img-wrapper">
+                        <img src="Screenshot_8.png" alt="Mickey Mouse Safari">
+                    </div>
+                    <div class="card-content">
+                        <h3>Mickey Safari 3D</h3>
+                        <p>🦁 Figura temática explorador lista para el Candy Bar.</p>
+                    </div>
                 </article>
 
-                <article class="producto-card">
-                    <img src="Screenshot_9.png" alt="Pluto Safari 3D">
-                    <h3>Pluto Safari</h3>
-                    <p>🐾 Compañero ideal para el set de Mickey Explorador. Excelente centro de mesa para eventos.</p>
+                <article class="producto-card card-interactive">
+                    <div class="img-wrapper">
+                        <img src="Screenshot_9.png" alt="Pluto Safari 3D">
+                    </div>
+                    <div class="card-content">
+                        <h3>Pluto Safari 3D</h3>
+                        <p>🐾 El compañero ideal para completar el set de exploradores.</p>
+                    </div>
                 </article>
 
-                <article class="producto-card">
-                    <img src="Screenshot_10.png" alt="Lola Bunny 3D">
-                    <h3>Lola Bunny 3D</h3>
-                    <p>🏀 Figura coleccionable y decorativa de Lola Bunny con acabado detallado para cumpleaños o exhibición.</p>
+                <article class="producto-card card-interactive">
+                    <div class="img-wrapper">
+                        <img src="Screenshot_10.png" alt="Lola Bunny 3D">
+                    </div>
+                    <div class="card-content">
+                        <h3>Lola Bunny 3D</h3>
+                        <p>🏀 Figura de colección deportiva con acabados únicos.</p>
+                    </div>
                 </article>
             </div>
 
-            <div style="margin-top: 25px;">
-                <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20consultar%20por%20un%20mu%C3%B1eco%20o%20figura%203D%20para%20un%20cumplea%C3%B1os/evento" target="_blank" rel="noopener noreferrer" class="btn-eventos">
-                    🎈 Cotizar Personaje para Evento
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20consultar%20por%20un%20mu%C3%B1eco%20o%20figura%203D%20para%20un%20cumplea%C3%B1os/evento" target="_blank" rel="noopener noreferrer" class="btn-creative btn-gold">
+                    🚀 Cotizar Personaje Personalizado
                 </a>
             </div>
         </section>
 
         <!-- SECCIÓN: Graduados -->
         <section id="graduados" class="graduados-section">
-            <h2>🎓 Sector Graduados & Fin de Cursada</h2>
-            <p class="subtitulo-seccion">Inmortaliza un momento tan especial con figuras personalizadas de graduación:</p>
+            <div class="section-title">
+                <h2>🎓 Sector Graduados & Egresados</h2>
+                <p class="subtitulo-seccion">Un recuerdo eterno de un gran logro</p>
+            </div>
 
-            <div class="catalogo-grid" style="justify-content: center;">
-                <article class="producto-card producto-destacado-card">
-                    <img src="ni%C3%B1os.png" alt="Pareja de Graduados Niña y Niño 3D">
-                    <h3>Pareja de Graduados 3D</h3>
-                    <p>🎓 Toga, birrete, detalle de girasol y diplomas. Ideales para recuerdos, adornos de torta o mesas de egresados.</p>
+            <div class="catalogo-grid single-item-grid">
+                <article class="producto-card card-interactive producto-destacado-card">
+                    <div class="img-wrapper">
+                        <img src="ni%C3%B1os.png" alt="Pareja de Graduados 3D">
+                    </div>
+                    <div class="card-content">
+                        <h3>Pareja de Graduados 3D</h3>
+                        <p>🎓 Toga, birrete, detalle de girasol y diplomas. Perfectos para centros de mesa o adornos de torta.</p>
+                    </div>
                 </article>
             </div>
         </section>
 
-        <section id="proceso" class="destacado-calidad">
-            <h2>¿Por qué elegir nuestras figuras?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>🛡️ Ultra Resistentes</h3>
-                    <p>Técnica de reforzado especial en cartón que le otorga a la estructura una dureza superior, manteniendo su forma intacta con los años.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>🎨 Acabado Artesanal</h3>
-                    <p>Pintadas a mano con técnicas de desgaste, sombreado y textura realista según cada personaje o diseño.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>🎁 Presentación Premium</h3>
-                    <p>Las ediciones de colección incluyen cajas ambientadas a medida, cómics/historietas hechas a mano y llaveros sorpresa.</p>
-                </div>
-            </div>
-        </section>
-
+        <!-- SECCIÓN: Galería -->
         <section id="galeria">
-            <h2>Galería de Creaciones Anteriores</h2>
-            <p>Cualquier personaje o idea la convertimos en realidad:</p>
+            <div class="section-title">
+                <h2>📸 Trabajos Anteriores</h2>
+                <p class="subtitulo-seccion">Muestra de procesos y pedidos entregados</p>
+            </div>
             
             <div class="catalogo-grid">
-                <article class="producto-card">
-                    <img src="osito.jpg" alt="Caja temática personalizada para bebé Sena">
-                    <h3>Kits Temáticos & Cajas</h3>
-                    <p>Vendida • Cajas y detalles personalizados ideales para nacimientos, cumpleaños y eventos especiales con letras 3D.</p>
+                <article class="producto-card card-interactive">
+                    <div class="img-wrapper">
+                        <img src="osito.jpg" alt="Kits Temáticos & Cajas">
+                    </div>
+                    <div class="card-content">
+                        <h3>Kits Temáticos & Cajas</h3>
+                        <p>Vendida • Ambientación con letras 3D y cajas sorpresa personalizadas.</p>
+                    </div>
                 </article>
 
-                <article class="producto-card">
-                    <img src="caballo.jpg" alt="Escultura de Caballo en Cartón">
-                    <h3>Estructura Caballo 3D</h3>
-                    <p>Proceso en cartón armado (sin terminar) mostrando la base previa al trabajo de reforzado y pintura final.</p>
+                <article class="producto-card card-interactive">
+                    <div class="img-wrapper">
+                        <img src="caballo.jpg" alt="Estructura Caballo 3D">
+                    </div>
+                    <div class="card-content">
+                        <h3>Estructura Caballo (En proceso)</h3>
+                        <p>Muestra del armado en cartón previo a la pintura reforzada.</p>
+                    </div>
                 </article>
 
-                <article class="producto-card">
-                    <img src="caballo1.jpg" alt="Escultura Caballo Pintado Finalizado">
-                    <h3>Escultura Caballo - Finalizado</h3>
-                    <p>Pieza terminada con acabado de pintura artesanal y sombreados en detalle.</p>
+                <article class="producto-card card-interactive">
+                    <div class="img-wrapper">
+                        <img src="caballo1.jpg" alt="Escultura Caballo Finalizado">
+                    </div>
+                    <div class="card-content">
+                        <h3>Caballo 3D Finalizado</h3>
+                        <p>Pieza totalmente terminada con pintura artística artesanal.</p>
+                    </div>
                 </article>
             </div>
         </section>
 
-        <section id="contacto" class="contacto-section">
-            <h2>¿Tienes un personaje o proyecto en mente?</h2>
-            <p>Hacemos pedidos totalmente personalizados. ¡Escríbenos para cotizar tu idea!</p>
-            <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20consultar%20por%20un%20dise%C3%B1o%20personalizado" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
-                💬 Pedir por WhatsApp
+        <!-- SECCIÓN: Contacto -->
+        <section id="contacto" class="contacto-section glass-card glow-gold">
+            <h2>¿Tienes un personaje en mente?</h2>
+            <p>Hacemos realidad cualquier diseño. ¡Mándanos tu idea y lo cotizamos!</p>
+            <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20consultar%20por%20un%20dise%C3%B1o%20personalizado" target="_blank" rel="noopener noreferrer" class="btn-creative btn-whatsapp-glow">
+                💬 Hablar por WhatsApp
             </a>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 MarPaty Diseños de Ensueños. Todos los derechos reservados.</p>
+        <p>&copy; 2026 MarPaty Diseños de Ensueños • Arte & Esculturas 3D</p>
     </footer>
 
-    <!-- Script de Efecto Lluvia de Nieve -->
+    <!-- Script Lluvia Nieve -->
     <script>
         function crearLluviaNieve() {
-            const cantidadCopos = 50;
-            for (let i = 0; i < cantidadCopos; i++) {
+            for (let i = 0; i < 40; i++) {
                 setTimeout(() => {
                     const copo = document.createElement('div');
                     copo.classList.add('copo-nieve');
                     copo.innerHTML = '❄';
                     copo.style.left = Math.random() * 100 + 'vw';
                     copo.style.animationDuration = (Math.random() * 3 + 2) + 's';
-                    copo.style.fontSize = (Math.random() * 15 + 15) + 'px';
+                    copo.style.fontSize = (Math.random() * 12 + 14) + 'px';
                     copo.style.opacity = Math.random();
-                    
                     document.body.appendChild(copo);
-
-                    setTimeout(() => {
-                        copo.remove();
-                    }, 5000);
+                    setTimeout(() => copo.remove(), 5000);
                 }, i * 100);
             }
         }
     </script>
-
 </body>
 </html>

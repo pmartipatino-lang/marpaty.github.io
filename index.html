@@ -9,7 +9,7 @@
 <body>
 
     <header class="header-banner">
-        <!-- Logo alargado superior -->
+        <!-- Banner del logo superior -->
         <img src="marpatyjpg.jpg" alt="MarPaty Diseños de Ensueños" class="banner-img">
         
         <nav>
@@ -29,6 +29,13 @@
                 Transformamos ideas y personajes en piezas artísticas coleccionables. 
                 Cada trabajo es único, elaborado con máxima dedicación y detalle.
             </p>
+            
+            <!-- Botón Especial de Navidad -->
+            <div class="navidad-container">
+                <button id="btnNavidad" class="btn-navidad" onclick="crearLluviaNieve()">
+                    🎄 Especial Navidad - Próximamente ❄️
+                </button>
+            </div>
         </section>
 
         <section id="proceso" class="destacado-calidad">
@@ -57,19 +64,19 @@
                 <article class="producto-card">
                     <img src="osito.jpg" alt="Caja temática personalizada para bebé Sena">
                     <h3>Kits Temáticos & Cajas</h3>
-                    <p>Ideal para nacimientos, cumpleaños y eventos especiales con letras 3D.</p>
+                    <p>Vendida • Cajas y detalles personalizados ideales para nacimientos, cumpleaños y eventos especiales con letras 3D.</p>
                 </article>
 
                 <article class="producto-card">
-                    <img src="caballo.jpg" alt="Escultura de Caballo 3D">
-                    <h3>Escultura Caballo Low Poly</h3>
-                    <p>Modelo geométrico tridimensional elaborado y ensamblado artesanalmente.</p>
+                    <img src="caballo.jpg" alt="Escultura de Caballo en Cartón">
+                    <h3>Estructura Caballo 3D</h3>
+                    <p>Proceso en cartón armado (sin terminar) mostrando la base previa al trabajo de reforzado y pintura final.</p>
                 </article>
 
                 <article class="producto-card">
-                    <img src="caballo1.jpg" alt="Escultura Caballo Acabado Especial">
-                    <h3>Caballo 3D - Detalle</h3>
-                    <p>Piezas exclusivas con acabados y colores personalizados a pedido.</p>
+                    <img src="caballo1.jpg" alt="Escultura Caballo Pintado Finalizado">
+                    <h3>Escultura Caballo - Finalizado</h3>
+                    <p>Pieza terminada con acabado de pintura artesanal y sombreados en detalle.</p>
                 </article>
             </div>
         </section>
@@ -86,6 +93,30 @@
     <footer>
         <p>&copy; 2026 MarPaty Diseños de Ensueños. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Script de Efecto Lluvia de Nieve -->
+    <script>
+        function crearLluviaNieve() {
+            const cantidadCopos = 50;
+            for (let i = 0; i < cantidadCopos; i++) {
+                setTimeout(() => {
+                    const copo = document.createElement('div');
+                    copo.classList.add('copo-nieve');
+                    copo.innerHTML = '❄';
+                    copo.style.left = Math.random() * 100 + 'vw';
+                    copo.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                    copo.style.fontSize = (Math.random() * 15 + 15) + 'px';
+                    copo.style.opacity = Math.random();
+                    
+                    document.body.appendChild(copo);
+
+                    setTimeout(() => {
+                        copo.remove();
+                    }, 5000);
+                }, i * 100);
+            }
+        }
+    </script>
 
 </body>
 </html>

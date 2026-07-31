@@ -13,20 +13,18 @@
 </head>
 <body>
 
-    <!-- ENCABEZADO / HERO -->
+    <!-- ENCABEZADO -->
     <header class="hero">
-        <h1>MarPaty</h1>
-        <p class="tagline">Diseños de Ensueños</p>
+        <h1>MarPaty | Diseños de Ensueños</h1>
         <h2>Esculturas 3D & Cajas Temáticas Personalizadas</h2>
         
-        <!-- Ubicación y Envíos -->
-        <div class="ubicacion-envios">
+        <p class="ubicacion-envios">
             📍 <strong>Corrientes Capital, Argentina</strong> — 🚚 Envíos a todo el país (a cargo del comprador)
-        </div>
+        </p>
 
-        <p class="descripcion-hero">
-            Transformamos tus personajes favoritos en piezas artísticas coleccionables. 
-            Cada trabajo es único y elaborado con máxima dedicación.
+        <p>
+            Transformamos ideas y personajes en piezas artísticas coleccionables. 
+            Cada trabajo es único, elaborado con máxima dedicación y detalle.
         </p>
         
         <div class="navidad-container">
@@ -36,70 +34,53 @@
         </div>
     </header>
 
-    <!-- SECCIÓN DE CATÁLOGO Y FILTROS -->
+    <!-- CATÁLOGO DE PRODUCTOS -->
     <main>
         <section id="catalogo" class="catalogo-seccion">
-            <h2>🎨 Catálogo de Colecciones</h2>
-            <p class="subtitulo-seccion">Haz clic en una categoría para explorar los modelos:</p>
+            <h2>Catálogo de Esculturas 3D</h2>
 
-            <!-- Botones de Categorías -->
-            <div class="filtros-container">
-                <button class="btn-filtro active" onclick="filtrarCatalogo('todos', this)">✨ Todos</button>
-                <button class="btn-filtro" onclick="filtrarCatalogo('anime', this)">🌸 Anime & Sailor Moon</button>
-                <button class="btn-filtro" onclick="filtrarCatalogo('dragonball', this)">🐉 Dragon Ball</button>
-                <button class="btn-filtro" onclick="filtrarCatalogo('harry', this)">⚡ Harry Potter</button>
-                <button class="btn-filtro" onclick="filtrarCatalogo('cine-terror', this)">🎬 Cine & Terror</button>
-                <button class="btn-filtro" onclick="filtrarCatalogo('fantasía', this)">🐱 Fantasía & Mascotas</button>
-            </div>
-
-            <!-- Grilla de Productos -->
             <div class="catalogo-grid">
 
-                <!-- Anime / Sailor Moon -->
-                <article class="producto-card anime">
-                    <img src="luna.jpeg" alt="Serena Sailor Moon 3D">
-                    <h3>Serena (Sailor Moon)</h3>
-                    <p>Diseño tierno y casual en estilo low poly.</p>
-                </article>
-
-                <article class="producto-card anime">
+                <article class="producto-card">
                     <img src="chains.jpeg" alt="Chainsaw Man 3D">
                     <h3>Chainsaw Man</h3>
-                    <p>Escultura 3D poligonaria con motosierras y acabado a mano.</p>
+                    <p>Escultura 3D poligonaria con motosierras y acabado detallado.</p>
                 </article>
 
-                <!-- Dragon Ball -->
-                <article class="producto-card dragonball">
+                <article class="producto-card">
+                    <img src="gatito.jpeg" alt="Gatito Místico 3D">
+                    <h3>Gatito Místico & Cuervo</h3>
+                    <p>Pieza en tonos azules con cuervo y detalles expresivos.</p>
+                </article>
+
+                <article class="producto-card">
+                    <img src="ghostface_transparent.jpg" alt="Ghostface Cine 3D">
+                    <h3>Ghostface Cine 3D</h3>
+                    <p>Versión pochoclera con lentes 3D y vaso de gaseosa.</p>
+                </article>
+
+                <article class="producto-card">
+                    <img src="ghostface2_transparent.jpg" alt="Ghostface Clásico">
+                    <h3>Ghostface Clásico</h3>
+                    <p>Figura de terror estilizada en low-poly con cuchillo.</p>
+                </article>
+
+                <article class="producto-card">
                     <img src="goku.jpeg" alt="Goku Niño 3D">
-                    <h3>Goku Niño</h3>
+                    <h3>Goku Niño (Dragon Ball)</h3>
                     <p>Modelo clásico con su báculo sagrado y mochila.</p>
                 </article>
 
-                <!-- Harry Potter -->
-                <article class="producto-card harry">
-                    <img src="harry.jpeg" alt="Harry Potter con Hedwig">
+                <article class="producto-card">
+                    <img src="harry.jpeg" alt="Harry Potter 3D">
                     <h3>Harry Potter & Hedwig</h3>
-                    <p>Incluye varita, libros mágicos y la lechuza Hedwig.</p>
+                    <p>Escultura con varita, libros mágicos y la lechuza Hedwig.</p>
                 </article>
 
-                <!-- Cine & Terror -->
-                <article class="producto-card cine-terror">
-                    <img src="ghostface_transparent.jpg" alt="Ghostface Cine 3D">
-                    <h3>Ghostface Cine 3D</h3>
-                    <p>Edición pochoclera con lentes 3D y bebida.</p>
-                </article>
-
-                <article class="producto-card cine-terror">
-                    <img src="ghostface2_transparent.jpg" alt="Ghostface con Cuchillo">
-                    <h3>Ghostface Clásico</h3>
-                    <p>Figura icónica de terror estilizada en papel 3D.</p>
-                </article>
-
-                <!-- Fantasía & Mascotas -->
-                <article class="producto-card fantasía">
-                    <img src="gatito.jpeg" alt="Gatito Místico 3D">
-                    <h3>Gatito Místico & Cuervo</h3>
-                    <p>Pieza en tonos azules con expresión tierno-mística.</p>
+                <article class="producto-card">
+                    <img src="luna.jpeg" alt="Sailor Moon 3D">
+                    <h3>Serena (Sailor Moon)</h3>
+                    <p>Diseño tierno y casual disfrutando de una bebida.</p>
                 </article>
 
             </div>
@@ -112,7 +93,7 @@
         <p class="copyright">&copy; 2026 MarPaty Diseños de Ensueños. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- Script de interacción y filtros -->
+    <!-- Script JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>

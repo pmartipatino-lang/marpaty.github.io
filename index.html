@@ -16,7 +16,7 @@
     <!-- ENCABEZADO CON LOGO Y MARIPOSAS DE FONDO -->
     <header class="hero">
         <div class="logo-container">
-            <img src="marpatyjpg.jpg" alt="MarPaty Diseños de Ensueños Logo" class="logo-img">
+            <img src="marpatyjpg.jpg" alt="MarPaty Diseños de Ensueños Logo" class="logo-img" onclick="abrirModal(this.src)">
         </div>
         
         <h2>Esculturas 3D & Cajas Temáticas Personalizadas</h2>
@@ -32,8 +32,8 @@
         </p>
         
         <div class="navidad-container">
-            <button id="btnNavidad" class="btn-navidad" onclick="crearLluviaNieve()">
-                🎄 Especial Navidad - Próximamente ❄️
+            <button id="btnNavidad" class="btn-navidad" onclick="activarNieve()">
+                🎄 Especial Navidad - Activar Nieve ❄️
             </button>
         </div>
     </header>
@@ -44,28 +44,30 @@
         <div class="slider">
             <div class="slide-track">
                 <!-- Set 1 de imágenes -->
-                <div class="slide"><img src="chains.jpeg" alt="Chainsaw Man"></div>
-                <div class="slide"><img src="gatito.jpeg" alt="Gatito Místico"></div>
-                <div class="slide"><img src="ghostface_transparent.png" alt="Ghostface Cine"></div>
-                <div class="slide"><img src="ghostface2_transparent.png" alt="Ghostface Clásico"></div>
-                <div class="slide"><img src="goku.jpeg" alt="Goku"></div>
-                <div class="slide"><img src="harry.jpeg" alt="Harry Potter"></div>
-                <div class="slide"><img src="luna.jpeg" alt="Sailor Moon"></div>
-                <div class="slide"><img src="caballo.jpg" alt="Caballo 3D"></div>
-                <div class="slide"><img src="osito.jpg" alt="Osito 3D"></div>
-                <div class="slide"><img src="niños.png" alt="Colección Niños"></div>
+                <div class="slide"><img src="chains.jpeg" alt="Chainsaw Man" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="gatito.jpeg" alt="Gatito Místico" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="ghostface_transparent.png" alt="Ghostface Cine" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="ghostface2_transparent.png" alt="Ghostface Clásico" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="goku.jpeg" alt="Goku" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="harry.jpeg" alt="Harry Potter" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="luna.jpeg" alt="Sailor Moon" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="caballo.jpg" alt="Caballo Proceso" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="caballo1.jpg" alt="Caballo Resultado" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="osito.jpg" alt="Osito 3D" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="niños.png" alt="Colección Niños" onclick="abrirModal(this.src)"></div>
 
-                <!-- Duplicados para lograr el efecto infinito sin cortes -->
-                <div class="slide"><img src="chains.jpeg" alt="Chainsaw Man"></div>
-                <div class="slide"><img src="gatito.jpeg" alt="Gatito Místico"></div>
-                <div class="slide"><img src="ghostface_transparent.png" alt="Ghostface Cine"></div>
-                <div class="slide"><img src="ghostface2_transparent.png" alt="Ghostface Clásico"></div>
-                <div class="slide"><img src="goku.jpeg" alt="Goku"></div>
-                <div class="slide"><img src="harry.jpeg" alt="Harry Potter"></div>
-                <div class="slide"><img src="luna.jpeg" alt="Sailor Moon"></div>
-                <div class="slide"><img src="caballo.jpg" alt="Caballo 3D"></div>
-                <div class="slide"><img src="osito.jpg" alt="Osito 3D"></div>
-                <div class="slide"><img src="niños.png" alt="Colección Niños"></div>
+                <!-- Duplicados para el carrusel infinito -->
+                <div class="slide"><img src="chains.jpeg" alt="Chainsaw Man" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="gatito.jpeg" alt="Gatito Místico" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="ghostface_transparent.png" alt="Ghostface Cine" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="ghostface2_transparent.png" alt="Ghostface Clásico" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="goku.jpeg" alt="Goku" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="harry.jpeg" alt="Harry Potter" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="luna.jpeg" alt="Sailor Moon" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="caballo.jpg" alt="Caballo Proceso" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="caballo1.jpg" alt="Caballo Resultado" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="osito.jpg" alt="Osito 3D" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="niños.png" alt="Colección Niños" onclick="abrirModal(this.src)"></div>
             </div>
         </div>
     </section>
@@ -78,61 +80,71 @@
             <div class="catalogo-grid">
 
                 <article class="producto-card">
-                    <img src="chains.jpeg" alt="Chainsaw Man 3D">
+                    <img src="chains.jpeg" alt="Chainsaw Man 3D" onclick="abrirModal(this.src)">
                     <h3>Chainsaw Man</h3>
                     <p>Escultura 3D poligonaria con motosierras y acabado detallado.</p>
                 </article>
 
                 <article class="producto-card">
-                    <img src="gatito.jpeg" alt="Gatito Místico 3D">
+                    <img src="gatito.jpeg" alt="Gatito Místico 3D" onclick="abrirModal(this.src)">
                     <h3>Gatito Místico & Cuervo</h3>
                     <p>Pieza en tonos azules con cuervo y detalles expresivos.</p>
                 </article>
 
                 <article class="producto-card">
-                    <img src="ghostface_transparent.png" alt="Ghostface Cine 3D">
+                    <img src="ghostface_transparent.png" alt="Ghostface Cine 3D" onclick="abrirModal(this.src)">
                     <h3>Ghostface Cine 3D</h3>
                     <p>Versión pochoclera con lentes 3D y vaso de gaseosa.</p>
                 </article>
 
                 <article class="producto-card">
-                    <img src="ghostface2_transparent.png" alt="Ghostface Clásico">
+                    <img src="ghostface2_transparent.png" alt="Ghostface Clásico" onclick="abrirModal(this.src)">
                     <h3>Ghostface Clásico</h3>
                     <p>Figura de terror estilizada en low-poly con cuchillo.</p>
                 </article>
 
                 <article class="producto-card">
-                    <img src="goku.jpeg" alt="Goku Niño 3D">
+                    <img src="goku.jpeg" alt="Goku Niño 3D" onclick="abrirModal(this.src)">
                     <h3>Goku Niño (Dragon Ball)</h3>
                     <p>Modelo clásico con su báculo sagrado y mochila.</p>
                 </article>
 
                 <article class="producto-card">
-                    <img src="harry.jpeg" alt="Harry Potter 3D">
+                    <img src="harry.jpeg" alt="Harry Potter 3D" onclick="abrirModal(this.src)">
                     <h3>Harry Potter & Hedwig</h3>
                     <p>Escultura con varita, libros mágicos y la lechuza Hedwig.</p>
                 </article>
 
                 <article class="producto-card">
-                    <img src="luna.jpeg" alt="Sailor Moon 3D">
+                    <img src="luna.jpeg" alt="Sailor Moon 3D" onclick="abrirModal(this.src)">
                     <h3>Serena (Sailor Moon)</h3>
                     <p>Diseño tierno y casual disfrutando de una bebida.</p>
                 </article>
 
-                <article class="producto-card">
-                    <img src="caballo.jpg" alt="Escultura Caballo 3D">
-                    <h3>Escultura Caballo 3D</h3>
-                    <p>Diseño geométrico elegante de alta precisión.</p>
+                <!-- CABALLO ANTES Y DESPUÉS -->
+                <article class="producto-card card-doble">
+                    <div class="antes-despues-grid">
+                        <div>
+                            <span class="etiqueta-proceso">Estructura Base</span>
+                            <img src="caballo.jpg" alt="Caballo Antes" onclick="abrirModal(this.src)">
+                        </div>
+                        <div>
+                            <span class="etiqueta-proceso">Resultado Final</span>
+                            <img src="caballo1.jpg" alt="Caballo Después" onclick="abrirModal(this.src)">
+                        </div>
+                    </div>
+                    <h3>Escultura Caballo 3D (Antes y Después)</h3>
+                    <p>Muestra del proceso de ensamblado y acabado final del modelo geométrico.</p>
                 </article>
 
                 <article class="producto-card">
-                    <img src="osito.jpg" alt="Osito 3D">
+                    <img src="osito.jpg" alt="Osito 3D" onclick="abrirModal(this.src)">
                     <h3>Tierno Osito 3D</h3>
                     <p>Figura decorativa en papel 3D ideal para obsequios.</p>
                 </article>
 
                 <article class="producto-card">
-                    <img src="niños.png" alt="Diseños infantiles 3D">
+                    <img src="niños.png" alt="Diseños infantiles 3D" onclick="abrirModal(this.src)">
                     <h3>Colección Infantil</h3>
                     <p>Cajas y figuras temáticas personalizadas para eventos.</p>
                 </article>
@@ -140,6 +152,17 @@
             </div>
         </section>
     </main>
+
+    <!-- VENTANA MODAL PARA AGRANDAR IMÁGENES -->
+    <div id="modalImagen" class="modal" onclick="cerrarModal()">
+        <span class="cerrar-modal">&times;</span>
+        <img class="modal-contenido" id="imgAmpliada">
+    </div>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/5493790000000?text=Hola!%20Me%20interesa%20consultar%20por%20sus%20esculturas%203D" class="btn-whatsapp" target="_blank" title="Consultar por WhatsApp">
+        💬
+    </a>
 
     <!-- PIE DE PÁGINA -->
     <footer>

@@ -37,7 +37,7 @@
         </div>
     </header>
 
-    <!-- CARRUSEL EN MOVIMIENTO -->
+    <!-- CARRUSEL EN MOVIMIENTO CONTINUO -->
     <section class="carrusel-seccion">
         <h2>✨ Galería Destacada ✨</h2>
         <div class="slider">
@@ -55,7 +55,7 @@
                 <div class="slide"><img src="osito.jpg" alt="Osito 3D" onclick="abrirModal(this.src)"></div>
                 <div class="slide"><img src="niños.png" alt="Colección Niños" onclick="abrirModal(this.src)"></div>
 
-                <!-- Tira 2 (Duplicado para loop infinito) -->
+                <!-- Tira 2 (Duplicado) -->
                 <div class="slide"><img src="chains.jpeg" alt="Chainsaw Man" onclick="abrirModal(this.src)"></div>
                 <div class="slide"><img src="gatito.jpeg" alt="Gatito Místico" onclick="abrirModal(this.src)"></div>
                 <div class="slide"><img src="ghostface_transparent.png" alt="Ghostface Cine" onclick="abrirModal(this.src)"></div>
@@ -71,96 +71,132 @@
         </div>
     </section>
 
-    <!-- CATÁLOGO -->
+    <!-- CATÁLOGO COMPLETO -->
     <main>
         <section id="catalogo" class="catalogo-seccion">
             <h2>Catálogo Completo de Esculturas 3D</h2>
 
             <div class="catalogo-grid">
 
+                <!-- TARJETA 1 -->
                 <article class="producto-card">
                     <img src="chains.jpeg" alt="Chainsaw Man 3D" onclick="abrirModal(this.src)">
                     <h3>Chainsaw Man</h3>
                     <p>Escultura 3D poligonaria con motosierras y acabado detallado.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Chainsaw%20Man" target="_blank" class="btn-solicitar">
+                        📦 ¡Solicita el tuyo aquí!
+                    </a>
                 </article>
 
+                <!-- TARJETA 2 -->
                 <article class="producto-card">
                     <img src="gatito.jpeg" alt="Gatito Místico 3D" onclick="abrirModal(this.src)">
                     <h3>Gatito Místico & Cuervo</h3>
                     <p>Pieza en tonos azules con cuervo y detalles expresivos.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Gatito%20Místico" target="_blank" class="btn-solicitar">
+                        📦 ¡Solicita el tuyo aquí!
+                    </a>
                 </article>
 
+                <!-- TARJETA 3 -->
                 <article class="producto-card">
                     <img src="ghostface_transparent.png" alt="Ghostface Cine 3D" onclick="abrirModal(this.src)">
                     <h3>Ghostface Cine 3D</h3>
                     <p>Versión pochoclera con lentes 3D y vaso de gaseosa.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Ghostface%20Cine" target="_blank" class="btn-solicitar">
+                        📦 ¡Solicita el tuyo aquí!
+                    </a>
                 </article>
 
+                <!-- TARJETA 4 -->
                 <article class="producto-card">
                     <img src="ghostface2_transparent.png" alt="Ghostface Clásico" onclick="abrirModal(this.src)">
                     <h3>Ghostface Clásico</h3>
                     <p>Figura de terror estilizada en low-poly con cuchillo.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Ghostface%20Clásico" target="_blank" class="btn-solicitar">
+                        📦 ¡Solicita el tuyo aquí!
+                    </a>
                 </article>
 
+                <!-- TARJETA 5 -->
                 <article class="producto-card">
                     <img src="goku.jpeg" alt="Goku Niño 3D" onclick="abrirModal(this.src)">
                     <h3>Goku Niño (Dragon Ball)</h3>
                     <p>Modelo clásico con su báculo sagrado y mochila.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Goku%20Niño" target="_blank" class="btn-solicitar">
+                        📦 ¡Solicita el tuyo aquí!
+                    </a>
                 </article>
 
+                <!-- TARJETA 6 -->
                 <article class="producto-card">
                     <img src="harry.jpeg" alt="Harry Potter 3D" onclick="abrirModal(this.src)">
                     <h3>Harry Potter & Hedwig</h3>
                     <p>Escultura con varita, libros mágicos y la lechuza Hedwig.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Harry%20Potter" target="_blank" class="btn-solicitar">
+                        📦 ¡Solicita el tuyo aquí!
+                    </a>
                 </article>
 
+                <!-- TARJETA 7 -->
                 <article class="producto-card">
                     <img src="luna.jpeg" alt="Sailor Moon 3D" onclick="abrirModal(this.src)">
                     <h3>Serena (Sailor Moon)</h3>
                     <p>Diseño tierno y casual disfrutando de una bebida.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Serena%20Sailor%20Moon" target="_blank" class="btn-solicitar">
+                        📦 ¡Solicita el tuyo aquí!
+                    </a>
                 </article>
 
-                <!-- CABALLO ANTES Y DESPUÉS -->
-                <article class="producto-card">
-                    <div class="antes-despues-box">
-                        <div>
-                            <span class="etiqueta-proceso">Estructura Base</span>
-                            <img src="caballo.jpg" alt="Caballo Base" onclick="abrirModal(this.src)">
+                <!-- SLIDER COMPARATIVO DE CABALLO (ANTES Y DESPUÉS INTERACTIVO) -->
+                <article class="producto-card card-slider-comparativo">
+                    <div class="ba-slider" id="caballoSlider">
+                        <img src="caballo1.jpg" alt="Caballo Resultado Final">
+                        <div class="resize">
+                            <img src="caballo.jpg" alt="Caballo Estructura Base">
                         </div>
-                        <div>
-                            <span class="etiqueta-proceso">Resultado Final</span>
-                            <img src="caballo1.jpg" alt="Caballo Terminado" onclick="abrirModal(this.src)">
-                        </div>
+                        <span class="handle"></span>
                     </div>
-                    <h3>Escultura Caballo 3D</h3>
-                    <p>Muestra del proceso de armado y acabado final.</p>
+                    <h3>Escultura Caballo 3D (Proceso)</h3>
+                    <p>Mueve la flecha amarilla para ver la estructura base vs el resultado final.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Escultura%20Caballo%203D" target="_blank" class="btn-solicitar">
+                        📦 ¡Solicita el tuyo aquí!
+                    </a>
                 </article>
 
+                <!-- TARJETA 8 -->
                 <article class="producto-card">
                     <img src="osito.jpg" alt="Osito 3D" onclick="abrirModal(this.src)">
                     <h3>Tierno Osito 3D</h3>
                     <p>Figura decorativa en papel 3D ideal para obsequios.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Tierno%20Osito%203D" target="_blank" class="btn-solicitar">
+                        📦 ¡Solicita el tuyo aquí!
+                    </a>
                 </article>
 
+                <!-- TARJETA 9 -->
                 <article class="producto-card">
                     <img src="niños.png" alt="Diseños infantiles 3D" onclick="abrirModal(this.src)">
                     <h3>Colección Infantil</h3>
                     <p>Cajas y figuras temáticas personalizadas para eventos.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20un%20pedido%20de%20la:%20Colección%20Infantil" target="_blank" class="btn-solicitar">
+                        📦 ¡Solicita el tuyo aquí!
+                    </a>
                 </article>
 
             </div>
         </section>
     </main>
 
-    <!-- MODAL AGRANDAR IMAGEN -->
+    <!-- MODAL AGRANDAR IMÁGENES -->
     <div id="modalImagen" class="modal" onclick="cerrarModal()">
         <span class="cerrar-modal">&times;</span>
         <img class="modal-contenido" id="imgAmpliada">
     </div>
 
-    <!-- BOTÓN WHATSAPP -->
-    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20consultar%20por%20sus%20esculturas%203D" class="btn-whatsapp" target="_blank" title="Consultar por WhatsApp">
-        💬
+    <!-- BOTÓN FLOTANTE ESTILO CARTÓN / PAPERCRAFT -->
+    <a href="https://wa.me/5493794509063?text=Hola!%20Quisiera%20hacer%20una%20consulta%20general" class="btn-whatsapp-carton" target="_blank" title="Consultar por WhatsApp">
+        <span class="texto-carton">WhatsApp</span>
     </a>
 
     <!-- FOOTER -->

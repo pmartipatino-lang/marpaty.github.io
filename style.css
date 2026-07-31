@@ -1,40 +1,324 @@
-// ABRIR Y CERRAR MODAL DE IMÁGENES
-function abrirModal(src) {
-    const modal = document.getElementById("modalImagen");
-    const imgAmpliada = document.getElementById("imgAmpliada");
-    modal.style.display = "block";
-    imgAmpliada.src = src;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-function cerrarModal() {
-    document.getElementById("modalImagen").style.display = "none";
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d0d0d;
+    background-image: url('mariposas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
-// LLUVIA DE NIEVE ANIMADA
-let nieveActiva = false;
+/* HERO */
+.hero {
+    margin-bottom: 40px;
+    padding: 20px 10px;
+}
 
-function activarNieve() {
-    if (nieveActiva) return;
-    nieveActiva = true;
+.logo-img {
+    max-width: 260px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #ffd700;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
 
-    for (let i = 0; i < 40; i++) {
-        setTimeout(crearCopo, i * 150);
+.logo-img:hover {
+    transform: scale(1.03);
+}
+
+.hero h2 {
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.ubicacion-envios {
+    color: #ffd700;
+    font-size: 0.95rem;
+    margin: 18px auto;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 215, 0, 0.35);
+}
+
+.descripcion-hero {
+    max-width: 600px;
+    margin: 10px auto;
+    color: #e0e0e0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.btn-navidad {
+    background-color: #8b0000;
+    color: #ffffff;
+    border: 1px solid #ff4d4d;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-navidad:hover {
+    background-color: #a00000;
+    transform: scale(1.05);
+}
+
+/* CARRUSEL INFINITO */
+.carrusel-seccion {
+    margin: 30px auto 50px auto;
+    max-width: 1100px;
+}
+
+.carrusel-seccion h2 {
+    color: #ffd700;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+
+.slider {
+    background: rgba(0, 0, 0, 0.75);
+    height: 250px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.slide-track {
+    animation: scroll 35s linear infinite;
+    display: flex;
+    width: calc(200px * 22);
+}
+
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+.slide {
+    height: 250px;
+    width: 200px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 215, 0, 0.4);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.slide img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-200px * 11)); }
+}
+
+/* CATÁLOGO EN GRID */
+.catalogo-seccion h2 {
+    margin-bottom: 30px;
+    color: #ffd700;
+    font-size: 2rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.producto-card {
+    background-color: rgba(18, 18, 18, 0.9);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, border-color 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+    border-color: #ffd700;
+}
+
+.producto-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.producto-card h3 {
+    color: #ffd700;
+    font-size: 1.15rem;
+    margin-bottom: 6px;
+}
+
+.producto-card p {
+    color: #cccccc;
+    font-size: 0.88rem;
+    line-height: 1.4;
+}
+
+/* CABALLO ANTES Y DESPUÉS (AJUSTADO) */
+.antes-despues-box {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.antes-despues-box div {
+    flex: 1;
+}
+
+.antes-despues-box img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
+.etiqueta-proceso {
+    font-size: 0.72rem;
+    color: #ffd700;
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 40px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.92);
+}
+
+.modal-contenido {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 85vh;
+    border-radius: 10px;
+    border: 2px solid #ffd700;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.5);
+}
+
+.cerrar-modal {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    color: #ffd700;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* WHATSAPP FLOTANTE */
+.btn-whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.1);
+}
+
+/* NIEVE */
+.copo-nieve {
+    position: fixed;
+    top: -10px;
+    color: #fff;
+    user-select: none;
+    z-index: 998;
+    pointer-events: none;
+    animation: caida linear infinite;
+}
+
+@keyframes caida {
+    to {
+        transform: translateY(105vh);
     }
 }
 
-function crearCopo() {
-    const copo = document.createElement('div');
-    copo.classList.add('copo-nieve');
-    copo.innerHTML = '❄';
-    copo.style.left = Math.random() * 100 + 'vw';
-    copo.style.animationDuration = Math.random() * 3 + 2 + 's';
-    copo.style.opacity = Math.random();
-    copo.style.fontSize = Math.random() * 10 + 10 + 'px';
+/* FOOTER */
+footer {
+    margin-top: 50px;
+    padding: 20px 15px;
+    background-color: rgba(18, 18, 18, 0.95);
+    border: 1px solid rgba(255, 215, 0, 0.25);
+    border-radius: 12px;
+    color: #e0e0e0;
+    font-size: 0.9rem;
+}
 
-    document.body.appendChild(copo);
+footer .info-envios {
+    color: #ffd700;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
 
-    setTimeout(() => {
-        copo.remove();
-        if (nieveActiva) crearCopo();
-    }, 5000);
+footer .copyright {
+    color: #b0b0b0;
+    font-size: 0.8rem;
 }

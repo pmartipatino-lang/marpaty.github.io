@@ -38,3 +38,39 @@ function crearCopo() {
         if (nieveActiva) crearCopo();
     }, 5000);
 }
+
+// LÓGICA DEL SLIDER COMPARATIVO ANTES / DESPUÉS (CABALLO)
+document.addEventListener("DOMContentLoaded", function() {
+    const slider = document.getElementById("caballoSlider");
+    if (!slider) return;
+
+    const resize = slider.querySelector(".resize");
+    const handle = slider.querySelector(".handle");
+    let arrastrando = false;
+
+    function moverSlider(x) {
+        const rect = slider.getBoundingClientRect();
+        let posX = x - rect.left;
+
+        if (posX < 0) posX = 0;
+        if (posX > rect.width) posX = rect.width;
+
+        const porcentaje = (posX / rect.width) * 100;
+        resize.style.width = porcentaje + "%";
+        handle.style.left = porcentaje + "%";
+    }
+
+    // Eventos Mouse
+    handle.addEventListener("mousedown", () => arrastrando = true);
+    window.addEventListener("mouseup", () => arrastrando = false);
+    window.addEventListener("mousemove", (e) => {
+        if (arrastrando) moverSlider(e.clientX);
+    });
+
+    // Eventos Táctiles (Celulares)
+    handle.addEventListener("touchstart", () => arrastrando = true);
+    window.addEventListener("touchend", () => arrastrando = false);
+    window.addEventListener("touchmove", (e) => {
+        if (arrastrando && e.touches[0]) moverSlider(e.touches[0].clientX);
+    });
+});

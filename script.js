@@ -17,6 +17,14 @@ function activarNieve() {
     if (nieveActiva) return;
     nieveActiva = true;
 
+    // Cambiar estado visual del botón
+    const btnNavidad = document.getElementById('btnNavidad');
+    if (btnNavidad) {
+        btnNavidad.innerHTML = '✨ ¡Que caiga la nieve! ❄️';
+        btnNavidad.style.backgroundColor = '#218838';
+        btnNavidad.style.borderColor = '#28a745';
+    }
+
     for (let i = 0; i < 40; i++) {
         setTimeout(crearCopo, i * 150);
     }

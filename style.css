@@ -84,6 +84,117 @@ body {
     transform: scale(1.05);
 }
 
+/* =========================================
+   ESTILOS SECCIÓN ESPECIAL NAVIDAD
+   ========================================= */
+
+.navidad-seccion {
+    background-color: rgba(10, 15, 10, 0.9);
+    border: 2px dashed #b30000;
+    border-radius: 20px;
+    padding: 40px 20px;
+    margin: 20px auto 50px auto;
+    max-width: 1100px;
+    box-shadow: 0 0 30px rgba(179, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.navidad-decoracion-superior {
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.navidad-decoracion-superior h2 {
+    color: #ffd700;
+    font-size: 2.2rem;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.7), 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 10px;
+}
+
+.navidad-decoracion-superior p {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.navidad-decoracion-inferior {
+    margin-top: 40px;
+    color: #ffd700;
+    font-weight: bold;
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+.producto-card.navidad-card {
+    background-color: rgba(20, 25, 20, 0.95);
+    border-color: rgba(179, 0, 0, 0.4);
+    position: relative;
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.producto-card.navidad-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: #b30000;
+    box-shadow: 0 10px 25px rgba(179, 0, 0, 0.5);
+}
+
+.navidad-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #b30000;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+.btn-navidad-solicitar {
+    background: linear-gradient(135deg, #b30000, #800000);
+    border: 1px solid #ff4d4d;
+}
+
+.btn-navidad-solicitar:hover {
+    background: linear-gradient(135deg, #d40000, #a30000);
+    box-shadow: 0 4px 12px rgba(179, 0, 0, 0.6);
+}
+
+/* =========================================
+   ESTILOS SECCIÓN ANIMALES & MASCOTAS
+   ========================================= */
+
+.animales-seccion {
+    margin: 30px auto 50px auto;
+    max-width: 1100px;
+}
+
+.animales-decoracion-superior {
+    margin-bottom: 25px;
+}
+
+.animales-decoracion-superior h2 {
+    color: #ffd700;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.animales-decoracion-superior p {
+    color: #cccccc;
+    font-size: 0.95rem;
+}
+
+.animales-card {
+    border-color: rgba(255, 215, 0, 0.35);
+}
+
 /* CARRUSEL INFINITO */
 .carrusel-seccion {
     margin: 30px auto 50px auto;
@@ -376,4 +487,11 @@ footer .info-envios {
 footer .copyright {
     color: #b0b0b0;
     font-size: 0.8rem;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    .navidad-decoracion-superior h2 {
+        font-size: 1.8rem;
+    }
 }

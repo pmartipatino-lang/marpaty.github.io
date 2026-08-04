@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MarPaty | Diseños de Ensueños</title>
+    <title>MarPaty | Figuras & Esculturas 3D Coleccionables</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
@@ -13,128 +13,187 @@
 </head>
 <body>
 
-    <!-- ENCABEZADO -->
+    <!-- ENCABEZADO Y HERO -->
     <header class="hero">
-        <div class="logo-container">
-            <img src="marpatyjpg.jpg" alt="MarPaty Diseños de Ensueños Logo" class="logo-img" onclick="abrirModal(this.src)">
+        <div class="hero-header">
+            <img src="marpatyjpg.jpg" alt="MarPaty Logo" class="logo-img" onclick="abrirModal(this.src)">
+            <div class="hero-titulos">
+                <h1>MarPaty <span>Diseños de Ensueños</span></h1>
+                <p class="tagline">Esculturas 3D en Papercraft, Figuras de Colección & Cajas Temáticas</p>
+                <p class="ubicacion-envios">📍 Corrientes Capital — 🚚 Envíos a todo el país</p>
+            </div>
         </div>
-        
-        <h2>Esculturas 3D & Cajas Temáticas Personalizadas</h2>
-        
-        <p class="ubicacion-envios">
-            📍 <strong>Corrientes Capital, Argentina</strong> — 🚚 Envíos a todo el país (a cargo del comprador)
-        </p>
 
-        <p class="descripcion-hero">
-            Transformamos ideas y personajes en piezas artísticas coleccionables. 
-            Cada trabajo es único, elaborado con máxima dedicación y detalle.
-        </p>
-        
+        <!-- BOTONES DE NAVEGACIÓN RÁPIDA -->
+        <nav class="nav-categorias">
+            <a href="#info-materiales" class="btn-nav">🛠️ Materiales & Cajas</a>
+            <a href="#navidad" class="btn-nav btn-nav-destacado">🎄 Navidad</a>
+            <a href="#animales" class="btn-nav">🐾 Mascotas</a>
+            <a href="#catalogo" class="btn-nav">⭐ Catálogo Completo</a>
+        </nav>
+
         <div class="navidad-container">
             <button id="btnNavidad" class="btn-navidad" onclick="activarNieve()">
-                🎄 Especial Navidad - Activar Nieve ❄️
+                🎄 Activar Efecto Nieve ❄️
             </button>
         </div>
     </header>
 
+    <!-- BARRA DE BENEFICIOS / GARANTÍAS -->
+    <section class="barra-beneficios">
+        <div class="beneficio-item">
+            <span class="icono">🎨</span>
+            <div>
+                <h4>100% Artesanal</h4>
+                <p>Armado y pintado a mano</p>
+            </div>
+        </div>
+        <div class="beneficio-item">
+            <span class="icono">🎁</span>
+            <div>
+                <h4>Presentación Especial</h4>
+                <p>Cajas de colección o evento</p>
+            </div>
+        </div>
+        <div class="beneficio-item">
+            <span class="icono">📦</span>
+            <div>
+                <h4>Envíos Seguros</h4>
+                <p>A todo el país por correo</p>
+            </div>
+        </div>
+        <div class="beneficio-item">
+            <span class="icono">✨</span>
+            <div>
+                <h4>Personalizable</h4>
+                <p>Elegí tus colores y detalles</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE INFORMACIÓN DE MATERIALES Y PRESENTACIÓN -->
+    <section id="info-materiales" class="info-seccion">
+        <div class="info-card">
+            <div class="info-icono">🛠️</div>
+            <h3>Opciones de Materiales</h3>
+            <ul>
+                <li><strong>Cartón Pintado a Mano (Reforzado):</strong> Piezas ultrarresistentes, tratadas y pintadas artesanalmente con acabado rígido y duradero. Ideal para piezas únicas de exhibición.</li>
+                <li><strong>Opalina de Alto Gramaje:</strong> Piezas ligeras con impresiones nítidas, colores vibrantes y plegados de precisión profesional.</li>
+            </ul>
+        </div>
+
+        <div class="info-card">
+            <div class="info-icono">📦</div>
+            <h3>Entrega & Presentación</h3>
+            <ul>
+                <li><strong>Colección Exclusiva:</strong> Se entregan en **caja personalizada temática**, protegidas y listas para exhibir o regalar como pieza de colección.</li>
+                <li><strong>Eventos & Souvenirs:</strong> Presentación simplificada y práctica, pensada para pedidos al por mayor o decoración de fiestas.</li>
+            </ul>
+        </div>
+    </section>
+
     <!-- SECCIÓN ESPECIAL NAVIDAD -->
-    <section id="navidad" class="navidad-seccion">
-        <div class="navidad-decoracion-superior">
+    <section id="navidad" class="seccion-tienda navidad-seccion">
+        <div class="seccion-titulo">
             <h2>🎄 Magia Navideña en 3D ❄️</h2>
-            <p>Descubrí nuestra colección exclusiva para llenar tus fiestas de color y fantasía.</p>
+            <p>Colección festiva exclusiva para decorar o regalar en estas fiestas.</p>
         </div>
 
         <div class="catalogo-grid">
 
-            <!-- PRODUCTO NAVIDEÑO 1 -->
             <article class="producto-card navidad-card">
-                <div class="navidad-tag">Edición Especial</div>
-                <img src="TREN NAVIDEÑO.jpg" alt="Tren Navideño Papercraft" onclick="abrirModal(this.src)">
+                <span class="badge badge-navidad">Edición Especial</span>
+                <div class="img-container">
+                    <img src="TREN NAVIDEÑO.jpg" alt="Tren Navideño Papercraft" onclick="abrirModal(this.src)">
+                </div>
                 <h3>Expreso Polo Norte</h3>
-                <p>Increíble tren low-poly en verde y rojo con detalles de bastones de caramelo.</p>
+                <p>Tren low-poly en verde y rojo con detalles de caramelos festivos.</p>
                 <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20Tren%20Navideño" target="_blank" class="btn-solicitar btn-navidad-solicitar">
-                    🎁 ¡Lo quiero para mi árbol!
+                    🛒 Solicitar por WhatsApp
                 </a>
             </article>
 
-            <!-- PRODUCTO NAVIDEÑO 2 -->
             <article class="producto-card navidad-card">
-                <div class="navidad-tag">Edición Especial</div>
-                <img src="BOTASS DE SANTA .jpg" alt="Botas de Papá Noel Papercraft" onclick="abrirModal(this.src)">
+                <span class="badge badge-navidad">Edición Especial</span>
+                <div class="img-container">
+                    <img src="BOTASS DE SANTA .jpg" alt="Botas de Papá Noel Papercraft" onclick="abrirModal(this.src)">
+                </div>
                 <h3>Botas de Santa</h3>
-                <p>Dulces botitas rojas decoradas con muérdago, perfectas para sorpresas.</p>
+                <p>Botitas rojas decoradas con muérdago, perfectas para sorpresas.</p>
                 <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20las%20Botas%20de%20Santa" target="_blank" class="btn-solicitar btn-navidad-solicitar">
-                    🎁 ¡Ideal para regalar!
+                    🛒 Solicitar por WhatsApp
                 </a>
             </article>
 
-            <!-- PRODUCTO NAVIDEÑO 3 -->
             <article class="producto-card navidad-card">
-                <div class="navidad-tag">Edición Especial</div>
-                <img src="COLGANTE NAVIDAD.jpg" alt="Muñecos de Nieve Papercraft" onclick="abrirModal(this.src)">
+                <span class="badge badge-navidad">Edición Especial</span>
+                <div class="img-container">
+                    <img src="COLGANTE NAVIDAD.jpg" alt="Muñecos de Nieve Papercraft" onclick="abrirModal(this.src)">
+                </div>
                 <h3>Dúo Invernal</h3>
                 <p>Simpáticos muñecos de nieve con sombreros y bufandas a juego.</p>
                 <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20Dúo%20Invernal" target="_blank" class="btn-solicitar btn-navidad-solicitar">
-                    🎁 ¡Súper tiernos!
+                    🛒 Solicitar por WhatsApp
                 </a>
             </article>
 
-            <!-- PRODUCTO NAVIDEÑO 4 -->
             <article class="producto-card navidad-card">
-                <div class="navidad-tag">Edición Especial</div>
-                <img src="RENO.jpg" alt="Reno Navideño Papercraft" onclick="abrirModal(this.src)">
+                <span class="badge badge-navidad">Edición Especial</span>
+                <div class="img-container">
+                    <img src="RENO.jpg" alt="Reno Navideño Papercraft" onclick="abrirModal(this.src)">
+                </div>
                 <h3>Reno Saltarín</h3>
-                <p>Tierno reno con bufanda y bastón de caramelo, sobre una cajita de regalo.</p>
+                <p>Tierno reno con bufanda sobre cajita de regalo decorativa.</p>
                 <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20Reno%20Saltarín" target="_blank" class="btn-solicitar btn-navidad-solicitar">
-                    🎁 ¡Pura ternura!
+                    🛒 Solicitar por WhatsApp
                 </a>
             </article>
 
-            <!-- PRODUCTO NAVIDEÑO 5 -->
             <article class="producto-card navidad-card">
-                <div class="navidad-tag">Edición Especial</div>
-                <img src="SANTA EN CARRO.jpg" alt="Trineo de Papá Noel Papercraft" onclick="abrirModal(this.src)">
+                <span class="badge badge-navidad">Edición Especial</span>
+                <div class="img-container">
+                    <img src="SANTA EN CARRO.jpg" alt="Trineo de Papá Noel Papercraft" onclick="abrirModal(this.src)">
+                </div>
                 <h3>Trineo Mágico</h3>
-                <p>Papá Noel y su reno listos para repartir alegría en esta pieza única.</p>
+                <p>Papá Noel y su reno listos para repartir regalos en tu hogar.</p>
                 <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20Trineo%20Mágico" target="_blank" class="btn-solicitar btn-navidad-solicitar">
-                    🎁 ¡La magia llega a casa!
+                    🛒 Solicitar por WhatsApp
                 </a>
             </article>
 
-            <!-- PRODUCTO NAVIDEÑO 6 -->
             <article class="producto-card navidad-card">
-                <div class="navidad-tag">Edición Especial</div>
-                <img src="SANTA EN MOTO.jpg" alt="Papá Noel en Moto Papercraft" onclick="abrirModal(this.src)">
+                <span class="badge badge-navidad">Edición Especial</span>
+                <div class="img-container">
+                    <img src="SANTA EN MOTO.jpg" alt="Papá Noel en Moto Papercraft" onclick="abrirModal(this.src)">
+                </div>
                 <h3>Santa Motoquero</h3>
-                <p>¡Papá Noel cambió el trineo! Divertida figura low-poly llena de acción.</p>
+                <p>¡Papá Noel sobre ruedas! Divertida figura low-poly llena de acción.</p>
                 <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20Santa%20Motoquero" target="_blank" class="btn-solicitar btn-navidad-solicitar">
-                    🎁 ¡Súper original!
+                    🛒 Solicitar por WhatsApp
                 </a>
             </article>
 
-        </div>
-        
-        <div class="navidad-decoracion-inferior">
-            <p>🎄 *Todas las piezas son artesanales y personalizables.* 🎄</p>
         </div>
     </section>
 
     <!-- SECCIÓN ANIMALES Y MASCOTAS -->
-    <section id="animales" class="animales-seccion">
-        <div class="animales-decoracion-superior">
-            <h2>🐾 Colección Animales & Mascotas 3D 🐾</h2>
-            <p>Modelos poligonales llenos de actitud y carácter para decorar tus espacios.</p>
+    <section id="animales" class="seccion-tienda">
+        <div class="seccion-titulo">
+            <h2>🐾 Colección Mascotas & Animales 3D 🐾</h2>
+            <p>Modelos poligonales llenos de personalidad para decorar escritorios y repisas.</p>
         </div>
 
         <div class="catalogo-grid">
 
-            <!-- PRODUCTO ANIMALES 1 -->
-            <article class="producto-card animales-card">
-                <img src="PERRO.jpg" alt="Bulldog Guardián Papercraft" onclick="abrirModal(this.src)">
+            <article class="producto-card">
+                <span class="badge badge-destacado">Pintado a Mano / Cartón</span>
+                <div class="img-container">
+                    <img src="PERRO.jpg" alt="Bulldog Guardián Papercraft" onclick="abrirModal(this.src)">
+                </div>
                 <h3>Bulldog Guardián</h3>
-                <p>Escultura 3D low-poly de bulldog rudo con collar de picos y gran nivel de detalle.</p>
+                <p>Escultura 3D low-poly con collar de picos y acabado de alta resistencia.</p>
                 <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20Bulldog%20Guardián" target="_blank" class="btn-solicitar">
-                    📦 ¡Solicita el tuyo aquí!
+                    🛒 Solicitar por WhatsApp
                 </a>
             </article>
 
@@ -143,10 +202,9 @@
 
     <!-- CARRUSEL EN MOVIMIENTO CONTINUO -->
     <section class="carrusel-seccion">
-        <h2>✨ Galería Destacada ✨</h2>
+        <h2>✨ Galería de Trabajos Realizados ✨</h2>
         <div class="slider">
             <div class="slide-track">
-                <!-- Tira 1 -->
                 <div class="slide"><img src="chains.jpeg" alt="Chainsaw Man" onclick="abrirModal(this.src)"></div>
                 <div class="slide"><img src="gatito.jpeg" alt="Gatito Místico" onclick="abrirModal(this.src)"></div>
                 <div class="slide"><img src="ghostface_transparent.png" alt="Ghostface Cine" onclick="abrirModal(this.src)"></div>
@@ -159,7 +217,7 @@
                 <div class="slide"><img src="osito.jpg" alt="Osito 3D" onclick="abrirModal(this.src)"></div>
                 <div class="slide"><img src="niños.png" alt="Colección Niños" onclick="abrirModal(this.src)"></div>
 
-                <!-- Tira 2 (Duplicado) -->
+                <!-- Duplicado para loop infinito -->
                 <div class="slide"><img src="chains.jpeg" alt="Chainsaw Man" onclick="abrirModal(this.src)"></div>
                 <div class="slide"><img src="gatito.jpeg" alt="Gatito Místico" onclick="abrirModal(this.src)"></div>
                 <div class="slide"><img src="ghostface_transparent.png" alt="Ghostface Cine" onclick="abrirModal(this.src)"></div>
@@ -175,85 +233,103 @@
         </div>
     </section>
 
-    <!-- CATÁLOGO COMPLETO -->
+    <!-- CATÁLOGO PRINCIPAL -->
     <main>
-        <section id="catalogo" class="catalogo-seccion">
-            <h2>Catálogo Completo de Esculturas 3D</h2>
+        <section id="catalogo" class="seccion-tienda">
+            <div class="seccion-titulo">
+                <h2>⭐ Catálogo de Figuras & Esculturas ⭐</h2>
+                <p>Elegí tu modelo favorito o pedinos un personaje personalizado.</p>
+            </div>
 
             <div class="catalogo-grid">
 
-                <!-- TARJETA 1 -->
                 <article class="producto-card">
-                    <img src="chains.jpeg" alt="Chainsaw Man 3D" onclick="abrirModal(this.src)">
+                    <span class="badge">Colección Anime</span>
+                    <div class="img-container">
+                        <img src="chains.jpeg" alt="Chainsaw Man 3D" onclick="abrirModal(this.src)">
+                    </div>
                     <h3>Chainsaw Man</h3>
-                    <p>Escultura 3D poligonaria con motosierras y acabado detallado.</p>
+                    <p>Escultura 3D poligonal con detalles de sierras y estructura firme.</p>
                     <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Chainsaw%20Man" target="_blank" class="btn-solicitar">
-                        📦 ¡Solicita el tuyo aquí!
+                        🛒 Solicitar por WhatsApp
                     </a>
                 </article>
 
-                <!-- TARJETA 2 -->
                 <article class="producto-card">
-                    <img src="gatito.jpeg" alt="Gatito Místico 3D" onclick="abrirModal(this.src)">
+                    <span class="badge">Edición Arte</span>
+                    <div class="img-container">
+                        <img src="gatito.jpeg" alt="Gatito Místico 3D" onclick="abrirModal(this.src)">
+                    </div>
                     <h3>Gatito Místico & Cuervo</h3>
-                    <p>Pieza en tonos azules con cuervo y detalles expresivos.</p>
+                    <p>Pieza en tonos azules con cuervo posado y gran acabado visual.</p>
                     <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Gatito%20Místico" target="_blank" class="btn-solicitar">
-                        📦 ¡Solicita el tuyo aquí!
+                        🛒 Solicitar por WhatsApp
                     </a>
                 </article>
 
-                <!-- TARJETA 3 -->
                 <article class="producto-card">
-                    <img src="ghostface_transparent.png" alt="Ghostface Cine 3D" onclick="abrirModal(this.src)">
+                    <span class="badge">Cine & Terror</span>
+                    <div class="img-container">
+                        <img src="ghostface_transparent.png" alt="Ghostface Cine 3D" onclick="abrirModal(this.src)">
+                    </div>
                     <h3>Ghostface Cine 3D</h3>
-                    <p>Versión pochoclera con lentes 3D y vaso de gaseosa.</p>
+                    <p>Versión pochoclera con anteojos 3D y vaso de gaseosa.</p>
                     <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Ghostface%20Cine" target="_blank" class="btn-solicitar">
-                        📦 ¡Solicita el tuyo aquí!
+                        🛒 Solicitar por WhatsApp
                     </a>
                 </article>
 
-                <!-- TARJETA 4 -->
                 <article class="producto-card">
-                    <img src="ghostface2_transparent.png" alt="Ghostface Clásico" onclick="abrirModal(this.src)">
+                    <span class="badge">Cine & Terror</span>
+                    <div class="img-container">
+                        <img src="ghostface2_transparent.png" alt="Ghostface Clásico" onclick="abrirModal(this.src)">
+                    </div>
                     <h3>Ghostface Clásico</h3>
-                    <p>Figura de terror estilizada en low-poly con cuchillo.</p>
+                    <p>Icono del cine de terror estilizado en corte poligonal low-poly.</p>
                     <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Ghostface%20Clásico" target="_blank" class="btn-solicitar">
-                        📦 ¡Solicita el tuyo aquí!
+                        🛒 Solicitar por WhatsApp
                     </a>
                 </article>
 
-                <!-- TARJETA 5 -->
                 <article class="producto-card">
-                    <img src="goku.jpeg" alt="Goku Niño 3D" onclick="abrirModal(this.src)">
-                    <h3>Goku Niño (Dragon Ball)</h3>
-                    <p>Modelo clásico con su báculo sagrado y mochila.</p>
+                    <span class="badge">Colección Anime</span>
+                    <div class="img-container">
+                        <img src="goku.jpeg" alt="Goku Niño 3D" onclick="abrirModal(this.src)">
+                    </div>
+                    <h3>Goku Niño</h3>
+                    <p>Figura clásica de Dragon Ball con su báculo sagrado y mochila.</p>
                     <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Goku%20Niño" target="_blank" class="btn-solicitar">
-                        📦 ¡Solicita el tuyo aquí!
+                        🛒 Solicitar por WhatsApp
                     </a>
                 </article>
 
-                <!-- TARJETA 6 -->
                 <article class="producto-card">
-                    <img src="harry.jpeg" alt="Harry Potter 3D" onclick="abrirModal(this.src)">
+                    <span class="badge">Colección Magia</span>
+                    <div class="img-container">
+                        <img src="harry.jpeg" alt="Harry Potter 3D" onclick="abrirModal(this.src)">
+                    </div>
                     <h3>Harry Potter & Hedwig</h3>
-                    <p>Escultura con varita, libros mágicos y la lechuza Hedwig.</p>
+                    <p>Escultura con varita, tunicas, libros mágicos y su lechuza.</p>
                     <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Harry%20Potter" target="_blank" class="btn-solicitar">
-                        📦 ¡Solicita el tuyo aquí!
+                        🛒 Solicitar por WhatsApp
                     </a>
                 </article>
 
-                <!-- TARJETA 7 -->
                 <article class="producto-card">
-                    <img src="luna.jpeg" alt="Sailor Moon 3D" onclick="abrirModal(this.src)">
+                    <span class="badge">Colección Anime</span>
+                    <div class="img-container">
+                        <img src="luna.jpeg" alt="Sailor Moon 3D" onclick="abrirModal(this.src)">
+                    </div>
                     <h3>Serena (Sailor Moon)</h3>
-                    <p>Diseño tierno y casual disfrutando de una bebida.</p>
+                    <p>Diseño tierno y casual de Sailor Moon disfrutando una bebida.</p>
                     <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Serena%20Sailor%20Moon" target="_blank" class="btn-solicitar">
-                        📦 ¡Solicita el tuyo aquí!
+                        🛒 Solicitar por WhatsApp
                     </a>
                 </article>
 
-                <!-- SLIDER COMPARATIVO DE CABALLO (ANTES Y DESPUÉS INTERACTIVO) -->
+                <!-- SLIDER COMPARATIVO CABALLO -->
                 <article class="producto-card card-slider-comparativo">
+                    <span class="badge badge-destacado">Proceso de Trabajo</span>
                     <div class="ba-slider" id="caballoSlider">
                         <img src="caballo1.jpg" alt="Caballo Resultado Final">
                         <div class="resize">
@@ -261,30 +337,34 @@
                         </div>
                         <span class="handle"></span>
                     </div>
-                    <h3>Escultura Caballo 3D (Proceso)</h3>
-                    <p>Mueve la flecha amarilla para ver la estructura base vs el resultado final.</p>
+                    <h3>Caballo 3D (Antes y Después)</h3>
+                    <p>Desliza la flecha para comparar el armado base vs el acabado final.</p>
                     <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Escultura%20Caballo%203D" target="_blank" class="btn-solicitar">
-                        📦 ¡Solicita el tuyo aquí!
+                        🛒 Solicitar por WhatsApp
                     </a>
                 </article>
 
-                <!-- TARJETA 8 -->
                 <article class="producto-card">
-                    <img src="osito.jpg" alt="Osito 3D" onclick="abrirModal(this.src)">
+                    <span class="badge">Infantil & Regalos</span>
+                    <div class="img-container">
+                        <img src="osito.jpg" alt="Osito 3D" onclick="abrirModal(this.src)">
+                    </div>
                     <h3>Tierno Osito 3D</h3>
-                    <p>Figura decorativa en papel 3D ideal para obsequios.</p>
+                    <p>Figura tierna en papel 3D ideal para mesas dulces o regalos.</p>
                     <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Tierno%20Osito%203D" target="_blank" class="btn-solicitar">
-                        📦 ¡Solicita el tuyo aquí!
+                        🛒 Solicitar por WhatsApp
                     </a>
                 </article>
 
-                <!-- TARJETA 9 -->
                 <article class="producto-card">
-                    <img src="niños.png" alt="Diseños infantiles 3D" onclick="abrirModal(this.src)">
-                    <h3>Colección Infantil</h3>
-                    <p>Cajas y figuras temáticas personalizadas para eventos.</p>
+                    <span class="badge">Eventos & Fiesta</span>
+                    <div class="img-container">
+                        <img src="niños.png" alt="Diseños infantiles 3D" onclick="abrirModal(this.src)">
+                    </div>
+                    <h3>Colección Eventos</h3>
+                    <p>Cajas temáticas y figuras ideales para cumpleaños y fiestas.</p>
                     <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20un%20pedido%20de%20la:%20Colección%20Infantil" target="_blank" class="btn-solicitar">
-                        📦 ¡Solicita el tuyo aquí!
+                        🛒 Solicitar por WhatsApp
                     </a>
                 </article>
 
@@ -298,9 +378,9 @@
         <img class="modal-contenido" id="imgAmpliada">
     </div>
 
-    <!-- BOTÓN FLOTANTE ESTILO CARTÓN / PAPERCRAFT -->
+    <!-- BOTÓN FLOTANTE WHATSAPP ESTILO PAPERCRAFT -->
     <a href="https://wa.me/5493794509063?text=Hola!%20Quisiera%20hacer%20una%20consulta%20general" class="btn-whatsapp-carton" target="_blank" title="Consultar por WhatsApp">
-        <span class="texto-carton">WhatsApp</span>
+        <span class="texto-carton">WhatsApp Consultas</span>
     </a>
 
     <!-- FOOTER -->

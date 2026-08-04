@@ -274,7 +274,7 @@ body {
     text-shadow: 0 0 10px rgba(255, 77, 77, 0.4);
 }
 
-/* GRID COMPACTO DE PRODUCTOS (ESTILO COMPRAR JUGUETES) */
+/* GRID COMPACTO DE PRODUCTOS */
 .catalogo-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
@@ -390,6 +390,49 @@ body {
 
 .btn-navidad-solicitar:hover {
     background: #d40000;
+}
+
+/* BLOQUE / BANNER DE CONSULTA DE OTROS PERSONAJES */
+.banner-personajes-personalizados {
+    margin-top: 40px;
+    background: linear-gradient(135deg, rgba(22, 27, 34, 0.95), rgba(35, 42, 54, 0.95));
+    border: 2px dashed #ffd700;
+    border-radius: 16px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.banner-personajes-personalizados h3 {
+    color: #ffd700;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.banner-personajes-personalizados p {
+    color: #dddddd;
+    font-size: 0.95rem;
+    max-width: 650px;
+    margin: 0 auto 20px auto;
+    line-height: 1.5;
+}
+
+.btn-consultar-otros {
+    display: inline-block;
+    background: linear-gradient(135deg, #ffd700, #ffaa00);
+    color: #000000;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1rem;
+    padding: 12px 25px;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-consultar-otros:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
 }
 
 /* =========================================

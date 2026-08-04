@@ -26,17 +26,18 @@ body {
 }
 
 /* =========================================
-   HERO & CABECERA - LOGO INTEGRADO
+   HERO & CABECERA - ESTILO BANNER
    ========================================= */
 
 .hero {
     max-width: 1100px;
     margin: 0 auto 30px auto;
-    padding: 30px 20px;
-    background: rgba(22, 27, 34, 0.85);
+    padding: 20px;
+    background: rgba(15, 17, 21, 0.95);
     border: 1px solid rgba(255, 215, 0, 0.25);
-    border-radius: 16px;
+    border-radius: 20px;
     backdrop-filter: blur(8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
 
 .hero-header {
@@ -44,35 +45,35 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 12px;
     margin-bottom: 20px;
 }
 
 .logo-container {
     width: 100%;
-    max-width: 280px;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Formato ovalado/circular sin bordes rectos */
+/* El logo actúa como la tarjeta/banner central fluida */
 .logo-principal {
-    width: 220px;
-    height: 140px;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    max-height: 160px;
     object-fit: cover;
-    border-radius: 50%; /* Remueve las esquinas cuadradas */
-    /* Difuminado radial para fundir la imagen con el fondo */
-    mask-image: radial-gradient(circle, rgba(0,0,0,1) 55%, rgba(0,0,0,0) 100%);
-    -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 55%, rgba(0,0,0,0) 100%);
-    filter: drop-shadow(0 0 12px rgba(255, 215, 0, 0.3));
+    border-radius: 14px;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9), inset 0 0 10px rgba(255, 215, 0, 0.1);
     cursor: pointer;
-    transition: transform 0.3s, filter 0.3s;
+    transition: transform 0.3s, border-color 0.3s;
 }
 
 .logo-principal:hover {
-    transform: scale(1.05);
-    filter: drop-shadow(0 0 18px rgba(255, 215, 0, 0.5));
+    transform: translateY(-2px);
+    border-color: rgba(255, 215, 0, 0.6);
 }
 
 .hero-titulos {
@@ -83,14 +84,14 @@ body {
     color: #e0e0e0;
     font-size: 1.1rem;
     font-weight: 600;
-    margin-top: 4px;
+    margin-top: 6px;
 }
 
 .ubicacion-envios {
     color: #ffd700;
     font-size: 0.88rem;
-    margin-top: 8px;
-    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
     display: inline-block;
     padding: 6px 18px;
     border-radius: 20px;
@@ -670,7 +671,6 @@ footer .info-envios {
         font-size: 0.95rem;
     }
     .logo-principal {
-        width: 180px;
-        height: 110px;
+        max-height: 120px;
     }
 }

@@ -10,17 +10,16 @@ function cerrarModal() {
     document.getElementById("modalImagen").style.display = "none";
 }
 
-// LLUVIA DE NIEVE
+// LLUVIA DE NIEVE INTERACTIVA
 let nieveActiva = false;
 
 function activarNieve() {
     if (nieveActiva) return;
     nieveActiva = true;
 
-    // Cambiar estado visual del botón
     const btnNavidad = document.getElementById('btnNavidad');
     if (btnNavidad) {
-        btnNavidad.innerHTML = '✨ ¡Que caiga la nieve! ❄️';
+        btnNavidad.innerHTML = '✨ ¡Nieve Activada! ❄️';
         btnNavidad.style.backgroundColor = '#218838';
         btnNavidad.style.borderColor = '#28a745';
     }

@@ -1,3 +1,7 @@
+/* =========================================
+   ESTILOS GENERALES Y RESET
+   ========================================= */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -22,7 +26,7 @@ body {
 }
 
 /* =========================================
-   HERO & CABECERA
+   HERO & CABECERA CON LOGO DESTACADO
    ========================================= */
 
 .hero {
@@ -37,45 +41,43 @@ body {
 
 .hero-header {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     margin-bottom: 20px;
 }
 
-.logo-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 3px solid #ffd700;
+.logo-container {
+    width: 100%;
+    max-width: 340px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-principal {
+    width: 100%;
+    max-height: 180px;
+    object-fit: contain;
+    border-radius: 12px;
+    border: 2px solid #ffd700;
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
     cursor: pointer;
     transition: transform 0.3s;
 }
 
-.logo-img:hover {
-    transform: scale(1.05);
+.logo-principal:hover {
+    transform: scale(1.02);
 }
 
 .hero-titulos {
-    text-align: left;
-}
-
-.hero-titulos h1 {
-    font-size: 2rem;
-    color: #ffffff;
-    font-weight: 800;
-}
-
-.hero-titulos h1 span {
-    color: #ffd700;
-    font-weight: 400;
+    text-align: center;
 }
 
 .tagline {
-    color: #cccccc;
-    font-size: 1rem;
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    font-weight: 600;
     margin-top: 4px;
 }
 
@@ -85,7 +87,7 @@ body {
     margin-top: 8px;
     background-color: rgba(0, 0, 0, 0.5);
     display: inline-block;
-    padding: 4px 12px;
+    padding: 5px 15px;
     border-radius: 15px;
     border: 1px solid rgba(255, 215, 0, 0.3);
 }
@@ -146,7 +148,7 @@ body {
 }
 
 /* =========================================
-   BARRA DE BENEFICIOS DE LA TIENDA
+   BARRA DE BENEFICIOS
    ========================================= */
 
 .barra-beneficios {
@@ -392,7 +394,7 @@ body {
     background: #d40000;
 }
 
-/* BLOQUE / BANNER DE CONSULTA DE OTROS PERSONAJES */
+/* BLOQUE / BANNER DE CONSULTA DE STOCK */
 .banner-personajes-personalizados {
     margin-top: 40px;
     background: linear-gradient(135deg, rgba(22, 27, 34, 0.95), rgba(35, 42, 54, 0.95));
@@ -630,7 +632,10 @@ body {
     to { transform: translateY(105vh); }
 }
 
-/* FOOTER */
+/* =========================================
+   FOOTER
+   ========================================= */
+
 footer {
     margin-top: 40px;
     padding: 20px;
@@ -645,14 +650,11 @@ footer .info-envios {
     margin-bottom: 5px;
 }
 
+/* =========================================
+   RESPONSIVE (DISPOSITIVOS MÓVILES)
+   ========================================= */
+
 @media (max-width: 600px) {
-    .hero-header {
-        flex-direction: column;
-        text-align: center;
-    }
-    .hero-titulos {
-        text-align: center;
-    }
     .catalogo-grid {
         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     }
@@ -661,5 +663,8 @@ footer .info-envios {
     }
     .producto-card h3 {
         font-size: 0.95rem;
+    }
+    .logo-container {
+        max-width: 280px;
     }
 }

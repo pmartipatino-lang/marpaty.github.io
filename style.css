@@ -26,7 +26,7 @@ body {
 }
 
 /* =========================================
-   HERO & CABECERA - LOGO INTEGRADO NATURAL
+   HERO & CABECERA - LOGO INTEGRADO
    ========================================= */
 
 .hero {
@@ -50,29 +50,29 @@ body {
 
 .logo-container {
     width: 100%;
-    max-width: 320px;
+    max-width: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
 }
 
-/* Imagen del logo adaptada suavemente */
+/* Formato ovalado/circular sin bordes rectos */
 .logo-principal {
-    width: 100%;
-    max-height: 140px;
+    width: 220px;
+    height: 140px;
     object-fit: cover;
-    border-radius: 12px;
-    /* Efecto de fusión y brillo sutil para integrarlo al fondo */
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 215, 0, 0.2);
-    border: 1px solid rgba(255, 215, 0, 0.4);
+    border-radius: 50%; /* Remueve las esquinas cuadradas */
+    /* Difuminado radial para fundir la imagen con el fondo */
+    mask-image: radial-gradient(circle, rgba(0,0,0,1) 55%, rgba(0,0,0,0) 100%);
+    -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 55%, rgba(0,0,0,0) 100%);
+    filter: drop-shadow(0 0 12px rgba(255, 215, 0, 0.3));
     cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, filter 0.3s;
 }
 
 .logo-principal:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 30px rgba(255, 215, 0, 0.35);
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 18px rgba(255, 215, 0, 0.5));
 }
 
 .hero-titulos {
@@ -669,10 +669,8 @@ footer .info-envios {
     .producto-card h3 {
         font-size: 0.95rem;
     }
-    .logo-container {
-        max-width: 250px;
-    }
     .logo-principal {
-        max-height: 110px;
+        width: 180px;
+        height: 110px;
     }
 }

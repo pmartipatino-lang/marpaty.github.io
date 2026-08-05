@@ -3,403 +3,259 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MarPaty | Figuras & Esculturas 3D Coleccionables</title>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png">
-
-    <!-- Estilos -->
-    <link rel="stylesheet" href="style.css">
+    <title>MarPaty - Diseño de Ensueños</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- ENCABEZADO Y HERO CON LOGO DESTACADO -->
+    <!-- =========================================
+         HERO & CABECERA PRINCIPAL
+         ========================================= -->
     <header class="hero">
         <div class="hero-header">
             <div class="logo-container">
-                <img src="marpatyjpg.jpg" alt="MarPaty Logo" class="logo-principal" onclick="abrirModal(this.src)">
+                <img src="patrilogo.jpeg" alt="MarPaty Diseño de Ensueños" class="logo-principal" onclick="abrirModal(this.src)">
             </div>
             <div class="hero-titulos">
-                <p class="tagline">Esculturas 3D, Figuras de Colección & Cajas Temáticas</p>
-                <p class="ubicacion-envios">📍 Corrientes Capital — 🚚 Envíos a todo el país</p>
+                <p class="tagline">Figuras en Poliestireno Expandido & Decoración Única</p>
+                <span class="ubicacion-envios">📍 Envíos a todo el país | Trabajos Personalizados</span>
             </div>
         </div>
 
-        <!-- BOTONES DE NAVEGACIÓN RÁPIDA -->
+        <!-- MENÚ DE NAVEGACIÓN RÁPIDA -->
         <nav class="nav-categorias">
-            <a href="#info-materiales" class="btn-nav">🛠️ Materiales & Entrega</a>
-            <a href="#navidad" class="btn-nav btn-nav-destacado">🎄 Navidad</a>
-            <a href="#animales" class="btn-nav">🐾 Mascotas</a>
-            <a href="#catalogo" class="btn-nav">⭐ Catálogo Completo</a>
+            <a href="#navidad" class="btn-nav btn-nav-destacado">🎄 Especial Navidad</a>
+            <a href="#catalogo" class="btn-nav">📦 Catálogo General</a>
+            <a href="#informacion" class="btn-nav">ℹ️ Materiales & Cajas</a>
+            <a href="#contacto" class="btn-nav">💬 Contactar</a>
         </nav>
-
-        <div class="navidad-container">
-            <button id="btnNavidad" class="btn-navidad" onclick="activarNieve()">
-                🎄 Activar Efecto Nieve ❄️
-            </button>
-        </div>
     </header>
 
-    <!-- BARRA DE BENEFICIOS / GARANTÍAS -->
+    <!-- =========================================
+         BARRA DE BENEFICIOS / GARANTÍAS
+         ========================================= -->
     <section class="barra-beneficios">
+        <div class="beneficio-item">
+            <span class="icono">✨</span>
+            <div>
+                <h4>Corte de Alta Precisión</h4>
+                <p>Detalles limpios en cada pieza</p>
+            </div>
+        </div>
         <div class="beneficio-item">
             <span class="icono">🎨</span>
             <div>
-                <h4>100% Artesanal</h4>
-                <p>Armado y pintado a mano</p>
+                <h4>Listas para Pintar</h4>
+                <p>Aptas para acrílicos y látex</p>
             </div>
         </div>
         <div class="beneficio-item">
-            <span class="icono">🎁</span>
+            <span class="icono">🚚</span>
             <div>
-                <h4>Presentación a Elección</h4>
-                <p>Caja temática o bolsa económica</p>
+                <h4>Embalaje Seguro</h4>
+                <p>Protección especial para envíos</p>
             </div>
         </div>
         <div class="beneficio-item">
-            <span class="icono">📦</span>
+            <span class="icono">💡</span>
             <div>
-                <h4>Envíos Seguros</h4>
-                <p>A todo el país por correo</p>
-            </div>
-        </div>
-        <div class="beneficio-item">
-            <span class="icono">⭐</span>
-            <div>
-                <h4>Modelos Exclusivos</h4>
-                <p>Variedad de personajes en stock</p>
+                <h4>Diseños a Pedido</h4>
+                <p>Hacemos realidad tu idea</p>
             </div>
         </div>
     </section>
 
-    <!-- SECCIÓN DE INFORMACIÓN DE MATERIALES Y PRESENTACIÓN -->
-    <section id="info-materiales" class="info-seccion">
-        <div class="info-card">
-            <div class="info-icono">🛠️</div>
-            <h3>Opciones de Materiales</h3>
-            <ul>
-                <li><strong>Cartón Pintado a Mano (Reforzado):</strong> Piezas ultrarresistentes, tratadas y pintadas artesanalmente con acabado rígido y duradero. Ideal para piezas únicas de exhibición.</li>
-                <li><strong>Opalina de Alto Gramaje:</strong> Piezas ligeras con impresiones nítidas, colores vibrantes y plegados de precisión profesional.</li>
-            </ul>
-        </div>
-
-        <div class="info-card">
-            <div class="info-icono">📦</div>
-            <h3>Opciones de Entrega & Presentación</h3>
-            <ul>
-                <li><strong>Caja Personalizada Temática:</strong> Ideal para regalos especiales o piezas de colección. Protege tu modelo y le da un acabado único de exhibición.</li>
-                <li><strong>Bolsa Color Madera (Kraft):</strong> Una opción práctica y económica, perfecta para recuerdos, eventos o si buscás un costo más accesible.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- SECCIÓN ESPECIAL NAVIDAD -->
-    <section id="navidad" class="seccion-tienda navidad-seccion">
-        <div class="seccion-titulo">
-            <h2>🎄 Magia Navideña en 3D ❄️</h2>
-            <p>Colección festiva exclusiva para decorar o regalar en estas fiestas.</p>
-        </div>
-
-        <div class="catalogo-grid">
-
-            <article class="producto-card navidad-card">
-                <span class="badge badge-navidad">Edición Especial</span>
-                <div class="img-container">
-                    <img src="TREN NAVIDEÑO.jpg" alt="Tren Navideño" onclick="abrirModal(this.src)">
-                </div>
-                <h3>Expreso Polo Norte</h3>
-                <p>Tren low-poly en verde y rojo con detalles de caramelos festivos.</p>
-                <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20Tren%20Navideño" target="_blank" class="btn-solicitar btn-navidad-solicitar">
-                    🛒 Solicitar por WhatsApp
-                </a>
-            </article>
-
-            <article class="producto-card navidad-card">
-                <span class="badge badge-navidad">Edición Especial</span>
-                <div class="img-container">
-                    <img src="BOTASS DE SANTA .jpg" alt="Botas de Papá Noel" onclick="abrirModal(this.src)">
-                </div>
-                <h3>Botas de Santa</h3>
-                <p>Botitas rojas decoradas con muérdago, perfectas para sorpresas.</p>
-                <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20las%20Botas%20de%20Santa" target="_blank" class="btn-solicitar btn-navidad-solicitar">
-                    🛒 Solicitar por WhatsApp
-                </a>
-            </article>
-
-            <article class="producto-card navidad-card">
-                <span class="badge badge-navidad">Edición Especial</span>
-                <div class="img-container">
-                    <img src="COLGANTE NAVIDAD.jpg" alt="Muñecos de Nieve" onclick="abrirModal(this.src)">
-                </div>
-                <h3>Dúo Invernal</h3>
-                <p>Simpáticos muñecos de nieve con sombreros y bufandas a juego.</p>
-                <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20Dúo%20Invernal" target="_blank" class="btn-solicitar btn-navidad-solicitar">
-                    🛒 Solicitar por WhatsApp
-                </a>
-            </article>
-
-            <article class="producto-card navidad-card">
-                <span class="badge badge-navidad">Edición Especial</span>
-                <div class="img-container">
-                    <img src="RENO.jpg" alt="Reno Navideño" onclick="abrirModal(this.src)">
-                </div>
-                <h3>Reno Saltarín</h3>
-                <p>Tierno reno con bufanda sobre cajita de regalo decorativa.</p>
-                <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20Reno%20Saltarín" target="_blank" class="btn-solicitar btn-navidad-solicitar">
-                    🛒 Solicitar por WhatsApp
-                </a>
-            </article>
-
-            <article class="producto-card navidad-card">
-                <span class="badge badge-navidad">Edición Especial</span>
-                <div class="img-container">
-                    <img src="SANTA EN CARRO.jpg" alt="Trineo de Papá Noel" onclick="abrirModal(this.src)">
-                </div>
-                <h3>Trineo Mágico</h3>
-                <p>Papá Noel y su reno listos para repartir regalos en tu hogar.</p>
-                <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20Trineo%20Mágico" target="_blank" class="btn-solicitar btn-navidad-solicitar">
-                    🛒 Solicitar por WhatsApp
-                </a>
-            </article>
-
-            <article class="producto-card navidad-card">
-                <span class="badge badge-navidad">Edición Especial</span>
-                <div class="img-container">
-                    <img src="SANTA EN MOTO.jpg" alt="Papá Noel en Moto" onclick="abrirModal(this.src)">
-                </div>
-                <h3>Santa Motoquero</h3>
-                <p>¡Papá Noel sobre ruedas! Divertida figura low-poly llena de acción.</p>
-                <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20Santa%20Motoquero" target="_blank" class="btn-solicitar btn-navidad-solicitar">
-                    🛒 Solicitar por WhatsApp
-                </a>
-            </article>
-
-        </div>
-    </section>
-
-    <!-- SECCIÓN ANIMALES Y MASCOTAS -->
-    <section id="animales" class="seccion-tienda">
-        <div class="seccion-titulo">
-            <h2>🐾 Colección Mascotas & Animales 3D 🐾</h2>
-            <p>Modelos poligonales llenos de personalidad para decorar escritorios y repisas.</p>
-        </div>
-
-        <div class="catalogo-grid">
-
-            <article class="producto-card">
-                <span class="badge badge-destacado">Pintado a Mano / Cartón</span>
-                <div class="img-container">
-                    <img src="PERRO.jpg" alt="Bulldog Guardián" onclick="abrirModal(this.src)">
-                </div>
-                <h3>Bulldog Guardián</h3>
-                <p>Escultura 3D low-poly con collar de picos y acabado de alta resistencia.</p>
-                <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20Bulldog%20Guardián" target="_blank" class="btn-solicitar">
-                    🛒 Solicitar por WhatsApp
-                </a>
-            </article>
-
-        </div>
-    </section>
-
-    <!-- CARRUSEL EN MOVIMIENTO CONTINUO -->
+    <!-- =========================================
+         CARRUSEL SLIDER DESTACADO
+         ========================================= -->
     <section class="carrusel-seccion">
-        <h2>✨ Galería de Trabajos Realizados ✨</h2>
+        <h2>⭐ Galería de Trabajos Destacados</h2>
         <div class="slider">
             <div class="slide-track">
-                <div class="slide"><img src="chains.jpeg" alt="Chainsaw Man" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="gatito.jpeg" alt="Gatito Místico" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="ghostface_transparent.png" alt="Ghostface Cine" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="ghostface2_transparent.png" alt="Ghostface Clásico" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="goku.jpeg" alt="Goku" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="harry.jpeg" alt="Harry Potter" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="luna.jpeg" alt="Sailor Moon" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="caballo.jpg" alt="Caballo Proceso" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="caballo1.jpg" alt="Caballo Resultado" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="osito.jpg" alt="Osito 3D" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="niños.png" alt="Colección Niños" onclick="abrirModal(this.src)"></div>
-
-                <!-- Duplicado para loop infinito -->
-                <div class="slide"><img src="chains.jpeg" alt="Chainsaw Man" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="gatito.jpeg" alt="Gatito Místico" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="ghostface_transparent.png" alt="Ghostface Cine" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="ghostface2_transparent.png" alt="Ghostface Clásico" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="goku.jpeg" alt="Goku" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="harry.jpeg" alt="Harry Potter" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="luna.jpeg" alt="Sailor Moon" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="caballo.jpg" alt="Caballo Proceso" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="caballo1.jpg" alt="Caballo Resultado" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="osito.jpg" alt="Osito 3D" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="niños.png" alt="Colección Niños" onclick="abrirModal(this.src)"></div>
+                <!-- Se repiten imágenes para el efecto infinito -->
+                <div class="slide"><img src="mariposas.jpg" alt="Trabajo 1" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="mariposas.jpg" alt="Trabajo 2" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="mariposas.jpg" alt="Trabajo 3" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="mariposas.jpg" alt="Trabajo 4" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="mariposas.jpg" alt="Trabajo 5" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="mariposas.jpg" alt="Trabajo 6" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="mariposas.jpg" alt="Trabajo 7" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="mariposas.jpg" alt="Trabajo 8" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="mariposas.jpg" alt="Trabajo 9" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="mariposas.jpg" alt="Trabajo 10" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="mariposas.jpg" alt="Trabajo 11" onclick="abrirModal(this.src)"></div>
+                <!-- Duplicados para bucle fluído -->
+                <div class="slide"><img src="mariposas.jpg" alt="Trabajo 1" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="mariposas.jpg" alt="Trabajo 2" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="mariposas.jpg" alt="Trabajo 3" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="mariposas.jpg" alt="Trabajo 4" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="mariposas.jpg" alt="Trabajo 5" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="mariposas.jpg" alt="Trabajo 6" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="mariposas.jpg" alt="Trabajo 7" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="mariposas.jpg" alt="Trabajo 8" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="mariposas.jpg" alt="Trabajo 9" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="mariposas.jpg" alt="Trabajo 10" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="mariposas.jpg" alt="Trabajo 11" onclick="abrirModal(this.src)"></div>
             </div>
         </div>
     </section>
 
-    <!-- CATÁLOGO PRINCIPAL -->
-    <main>
-        <section id="catalogo" class="seccion-tienda">
-            <div class="seccion-titulo">
-                <h2>⭐ Catálogo de Figuras & Esculturas ⭐</h2>
-                <p>Elegí tu modelo favorito dentro de nuestro stock de diseños disponibles.</p>
+    <!-- =========================================
+         SECCIÓN NAVIDAD (TEMPORADA)
+         ========================================= -->
+    <section id="navidad" class="seccion-tienda navidad-seccion">
+        <div class="seccion-titulo">
+            <h2>🎄 Colección Especial de Navidad</h2>
+            <p>Decoraciones únicas para vestir tus fiestas de magia</p>
+        </div>
+
+        <div class="catalogo-grid">
+            <!-- Producto Navidad 1 -->
+            <div class="producto-card">
+                <span class="badge badge-navidad">Edición Festiva</span>
+                <div class="img-container">
+                    <img src="mariposas.jpg" alt="Figura Navideña" onclick="abrirModal(this.src)">
+                </div>
+                <h3>Pesebre Escultórico</h3>
+                <p>Figura decorativa lista para pintar o intervenir en telgopor de alta densidad.</p>
+                <a href="https://wa.me/?text=Hola!%20Me%20interesa%20consultar%20por%20el%20Pesebre%20Escultórico" target="_blank" class="btn-solicitar btn-navidad-solicitar">Consultar por WhatsApp</a>
             </div>
 
-            <div class="catalogo-grid">
+            <!-- Producto Navidad 2 -->
+            <div class="producto-card">
+                <span class="badge badge-navidad">Edición Festiva</span>
+                <div class="img-container">
+                    <img src="mariposas.jpg" alt="Árbol Navideño" onclick="abrirModal(this.src)">
+                </div>
+                <h3>Árbol 3D Calado</h3>
+                <p>Estructura de árbol navideño ideal para centros de mesa o vidrieras.</p>
+                <a href="https://wa.me/?text=Hola!%20Me%20interesa%20consultar%20por%20el%20Árbol%203D%20Calado" target="_blank" class="btn-solicitar btn-navidad-solicitar">Consultar por WhatsApp</a>
+            </div>
+        </div>
+    </section>
 
-                <article class="producto-card">
-                    <span class="badge">Colección Anime</span>
-                    <div class="img-container">
-                        <img src="chains.jpeg" alt="Chainsaw Man 3D" onclick="abrirModal(this.src)">
-                    </div>
-                    <h3>Chainsaw Man</h3>
-                    <p>Escultura 3D poligonal con detalles de sierras y estructura firme.</p>
-                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Chainsaw%20Man" target="_blank" class="btn-solicitar">
-                        🛒 Solicitar por WhatsApp
-                    </a>
-                </article>
+    <!-- =========================================
+         SECCIÓN CATÁLOGO GENERAL
+         ========================================= -->
+    <section id="catalogo" class="seccion-tienda">
+        <div class="seccion-titulo">
+            <h2>📦 Catálogo Principal</h2>
+            <p>Explora nuestras piezas en poliestireno expandido y modelos 3D</p>
+        </div>
 
-                <article class="producto-card">
-                    <span class="badge">Edición Arte</span>
-                    <div class="img-container">
-                        <img src="gatito.jpeg" alt="Gatito Místico 3D" onclick="abrirModal(this.src)">
-                    </div>
-                    <h3>Gatito Místico & Cuervo</h3>
-                    <p>Pieza en tonos azules con cuervo posado y gran acabado visual.</p>
-                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Gatito%20Místico" target="_blank" class="btn-solicitar">
-                        🛒 Solicitar por WhatsApp
-                    </a>
-                </article>
-
-                <article class="producto-card">
-                    <span class="badge">Cine & Terror</span>
-                    <div class="img-container">
-                        <img src="ghostface_transparent.png" alt="Ghostface Cine 3D" onclick="abrirModal(this.src)">
-                    </div>
-                    <h3>Ghostface Cine 3D</h3>
-                    <p>Versión pochoclera con anteojos 3D y vaso de gaseosa.</p>
-                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Ghostface%20Cine" target="_blank" class="btn-solicitar">
-                        🛒 Solicitar por WhatsApp
-                    </a>
-                </article>
-
-                <article class="producto-card">
-                    <span class="badge">Cine & Terror</span>
-                    <div class="img-container">
-                        <img src="ghostface2_transparent.png" alt="Ghostface Clásico" onclick="abrirModal(this.src)">
-                    </div>
-                    <h3>Ghostface Clásico</h3>
-                    <p>Ícono del cine de terror estilizado en corte poligonal low-poly.</p>
-                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Ghostface%20Clásico" target="_blank" class="btn-solicitar">
-                        🛒 Solicitar por WhatsApp
-                    </a>
-                </article>
-
-                <article class="producto-card">
-                    <span class="badge">Colección Anime</span>
-                    <div class="img-container">
-                        <img src="goku.jpeg" alt="Goku Niño 3D" onclick="abrirModal(this.src)">
-                    </div>
-                    <h3>Goku Niño</h3>
-                    <p>Figura clásica de Dragon Ball con su báculo sagrado y mochila.</p>
-                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Goku%20Niño" target="_blank" class="btn-solicitar">
-                        🛒 Solicitar por WhatsApp
-                    </a>
-                </article>
-
-                <article class="producto-card">
-                    <span class="badge">Colección Magia</span>
-                    <div class="img-container">
-                        <img src="harry.jpeg" alt="Harry Potter 3D" onclick="abrirModal(this.src)">
-                    </div>
-                    <h3>Harry Potter & Hedwig</h3>
-                    <p>Escultura con varita, túnica, libros mágicos y su lechuza.</p>
-                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Harry%20Potter" target="_blank" class="btn-solicitar">
-                        🛒 Solicitar por WhatsApp
-                    </a>
-                </article>
-
-                <article class="producto-card">
-                    <span class="badge">Colección Anime</span>
-                    <div class="img-container">
-                        <img src="luna.jpeg" alt="Sailor Moon 3D" onclick="abrirModal(this.src)">
-                    </div>
-                    <h3>Serena (Sailor Moon)</h3>
-                    <p>Diseño tierno y casual de Sailor Moon disfrutando una bebida.</p>
-                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Serena%20Sailor%20Moon" target="_blank" class="btn-solicitar">
-                        🛒 Solicitar por WhatsApp
-                    </a>
-                </article>
-
-                <!-- SLIDER COMPARATIVO CABALLO -->
-                <article class="producto-card card-slider-comparativo">
-                    <span class="badge badge-destacado">Proceso de Trabajo</span>
-                    <div class="ba-slider" id="caballoSlider">
-                        <img src="caballo1.jpg" alt="Caballo Resultado Final">
-                        <div class="resize">
-                            <img src="caballo.jpg" alt="Caballo Estructura Base">
-                        </div>
-                        <span class="handle"></span>
-                    </div>
-                    <h3>Caballo 3D (Antes y Después)</h3>
-                    <p>Deslizá la flecha para comparar el armado base vs el acabado final.</p>
-                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Escultura%20Caballo%203D" target="_blank" class="btn-solicitar">
-                        🛒 Solicitar por WhatsApp
-                    </a>
-                </article>
-
-                <article class="producto-card">
-                    <span class="badge">Infantil & Regalos</span>
-                    <div class="img-container">
-                        <img src="osito.jpg" alt="Osito 3D" onclick="abrirModal(this.src)">
-                    </div>
-                    <h3>Tierno Osito 3D</h3>
-                    <p>Figura tierna ideal para decoraciones de mesa o regalos.</p>
-                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20el%20personaje:%20Tierno%20Osito%203D" target="_blank" class="btn-solicitar">
-                        🛒 Solicitar por WhatsApp
-                    </a>
-                </article>
-
-                <article class="producto-card">
-                    <span class="badge">Eventos & Fiesta</span>
-                    <div class="img-container">
-                        <img src="niños.png" alt="Diseños infantiles 3D" onclick="abrirModal(this.src)">
-                    </div>
-                    <h3>Colección Eventos</h3>
-                    <p>Cajas temáticas y figuras ideales para cumpleaños y fiestas.</p>
-                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar%20un%20pedido%20de%20la:%20Colección%20Infantil" target="_blank" class="btn-solicitar">
-                        🛒 Solicitar por WhatsApp
-                    </a>
-                </article>
-
+        <div class="catalogo-grid">
+            <!-- Producto 1 -->
+            <div class="producto-card">
+                <span class="badge badge-destacado">Más Vendido</span>
+                <div class="img-container">
+                    <img src="mariposas.jpg" alt="Mariposas 3D" onclick="abrirModal(this.src)">
+                </div>
+                <h3>Set Mariposas Caladas</h3>
+                <p>Diseños delicados en varios tamaños para paredes y ambientaciones.</p>
+                <a href="https://wa.me/?text=Hola!%20Quiero%20consultar%20por%20el%20Set%20de%20Mariposas" target="_blank" class="btn-solicitar">Consultar por WhatsApp</a>
             </div>
 
-            <!-- BLOQUE STOCK Y OTROS MODELOS DISPONIBLES -->
-            <div class="banner-personajes-personalizados">
-                <h3>🔍 ¿Buscás otros personajes o modelos?</h3>
-                <p>Contamos con un catálogo extendido de personajes y plantillas predeterminadas en stock. Escribinos para conocer todos los modelos disponibles para encargar.</p>
-                <a href="https://wa.me/5493794509063?text=Hola!%20Quisiera%20consultar%20por%20otros%20personajes%20y%20modelos%20disponibles" target="_blank" class="btn-consultar-otros">
-                    ✨ Consultar stock de otros personajes
-                </a>
+            <!-- Producto 2: Slider Antes/Después (Caballo) -->
+            <div class="producto-card">
+                <span class="badge">Especial</span>
+                <div class="ba-slider" id="comparador-caballo">
+                    <img src="mariposas.jpg" alt="Caballo Terminado">
+                    <div class="resize">
+                        <img src="mariposas.jpg" alt="Caballo En Proceso">
+                    </div>
+                    <div class="handle"></div>
+                </div>
+                <h3>Caballo Escultórico</h3>
+                <p>Deslizá la barra para comparar el modelo en bruto vs. la pieza finalizada.</p>
+                <a href="https://wa.me/?text=Hola!%20Quiero%20consultar%20por%20el%20Caballo%20Escultórico" target="_blank" class="btn-solicitar">Consultar por WhatsApp</a>
             </div>
-        </section>
-    </main>
+        </div>
 
-    <!-- MODAL AGRANDAR IMÁGENES -->
-    <div id="modalImagen" class="modal" onclick="cerrarModal()">
-        <span class="cerrar-modal">&times;</span>
-        <img class="modal-contenido" id="imgAmpliada">
+        <!-- BANNER DE CONSULTA PERSONALIZADA -->
+        <div class="banner-personajes-personalizados">
+            <h3>🎨 ¿Buscás un diseño o personaje específico?</h3>
+            <p>Realizamos figuras personalizadas a la medida de tu evento o proyecto. Envianos tu idea o imagen de referencia y lo cotizamos sin compromiso.</p>
+            <a href="https://wa.me/?text=Hola!%20Quisiera%20consultar%20por%20un%20diseño%20personalizado" target="_blank" class="btn-consultar-otros">Pedir Presupuesto Personalizado</a>
+        </div>
+    </section>
+
+    <!-- =========================================
+         SECCIÓN INFORMATIVA: MATERIALES & CAJAS
+         ========================================= -->
+    <section id="informacion" class="info-seccion">
+        <div class="info-card">
+            <div class="info-icono">📦</div>
+            <h3>Cajas y Embalaje Especial</h3>
+            <ul>
+                <li>Diseñadas a la medida exacta de cada pieza para garantizar máxima protección.</li>
+                <li>Estructura reforzada ideal para envíos de larga distancia.</li>
+                <li>Asegura que tu pedido llegue en perfectas condiciones a tu puerta.</li>
+            </ul>
+        </div>
+
+        <div class="info-card">
+            <div class="info-icono">🎨</div>
+            <h3>Materiales y Recomendaciones</h3>
+            <ul>
+                <li>Poliestireno expandido de alta densidad para mayor rigidez y acabado suave.</li>
+                <li>Apto para pintar con pinturas al agua, acrílicos y látex.</li>
+                <li>Se recomienda usar adhesivos sin solventes (como silicona fría o cola vinílica).</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- =========================================
+         MODAL / VISOR DE IMÁGENES
+         ========================================= -->
+    <div id="modal-visor" class="modal">
+        <span class="cerrar-modal" onclick="cerrarModal()">&times;</span>
+        <img class="modal-contenido" id="img-modal-src">
     </div>
 
     <!-- BOTÓN FLOTANTE WHATSAPP -->
-    <a href="https://wa.me/5493794509063?text=Hola!%20Quisiera%20hacer%20una%20consulta%20general" class="btn-whatsapp-carton" target="_blank" title="Consultar por WhatsApp">
-        <span class="texto-carton">WhatsApp Consultas</span>
-    </a>
+    <a href="https://wa.me/" id="contacto" target="_blank" class="btn-whatsapp-carton">Consultar Pedido</a>
 
     <!-- FOOTER -->
     <footer>
-        <p class="info-envios">📍 Corrientes Capital, Argentina | 🚚 Envíos a todo el país a cargo del comprador</p>
-        <p class="copyright">&copy; 2026 MarPaty Diseños de Ensueño. Todos los derechos reservados.</p>
+        <p class="info-envios">📍 Envíos a todo el país desde Argentina</p>
+        <p>© MarPaty - Diseño de Ensueños. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- SCRIPT -->
-    <script src="script.js"></script>
+    <!-- =========================================
+         JAVASCRIPT FUNCIONAL
+         ========================================= -->
+    <script>
+        // Visor Modal de Imágenes
+        function abrirModal(src) {
+            var modal = document.getElementById("modal-visor");
+            var imgModal = document.getElementById("img-modal-src");
+            modal.style.display = "block";
+            imgModal.src = src;
+        }
+
+        function cerrarModal() {
+            document.getElementById("modal-visor").style.display = "none";
+        }
+
+        // Lógica para Slider Comparativo (Antes / Después)
+        document.querySelectorAll('.ba-slider').forEach(function(slider) {
+            var resize = slider.querySelector('.resize');
+            var handle = slider.querySelector('.handle');
+            
+            function onMove(e) {
+                var x = e.pageX || e.touches[0].pageX;
+                var rect = slider.getBoundingClientRect();
+                var position = x - rect.left - window.scrollX;
+                if (position < 0) position = 0;
+                if (position > rect.width) position = rect.width;
+                var percentage = (position / rect.width) * 100;
+                resize.style.width = percentage + '%';
+                handle.style.left = percentage + '%';
+            }
+
+            slider.addEventListener('mousemove', function(e) { if(e.buttons === 1) onMove(e); });
+            slider.addEventListener('touchmove', onMove);
+        });
+    </script>
 </body>
 </html>

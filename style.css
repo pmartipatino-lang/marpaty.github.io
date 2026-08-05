@@ -1,5 +1,5 @@
 /* ==========================================
-   1. RESET & ESTILOS GENERALES (TEMA OSCURO)
+   1. RESET & ESTILOS GENERALES
    ========================================== */
 * {
     margin: 0;
@@ -9,7 +9,11 @@
 }
 
 body {
-    background-color: #202131; /* Fondo oscuro original */
+    background-color: #202131;
+    background-image: url('mariposas.jpg');
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
     color: #ffffff;
     line-height: 1.6;
 }
@@ -18,7 +22,7 @@ body {
    2. ENCABEZADO (HERO) & AVISO DE STOCK
    ========================================== */
 .hero {
-    background-color: #202131;
+    background-color: transparent;
     color: #ffffff;
     text-align: center;
     padding: 40px 20px 30px;
@@ -53,7 +57,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Contenedor del Aviso de Stock/Tiempos (Diseño de la imagen) */
+/* Contenedor del Aviso de Stock/Tiempos */
 .aviso-stock-container {
     max-width: 750px;
     margin: 20px auto 25px auto;
@@ -109,7 +113,7 @@ body {
    ========================================== */
 .acabados-seccion {
     padding: 40px 20px;
-    background-color: #202131;
+    background-color: transparent;
 }
 
 .acabados-container {
@@ -138,13 +142,13 @@ body {
 }
 
 .acabado-card.basica {
-    background: #2a2b3d;
+    background: rgba(42, 43, 61, 0.9);
     border: 1px solid #3a3b50;
     color: #ffffff;
 }
 
 .acabado-card.premium {
-    background: #2d2a20;
+    background: rgba(45, 42, 32, 0.9);
     border: 2px solid #ffc107;
     color: #ffffff;
 }
@@ -201,7 +205,7 @@ body {
    ========================================== */
 .carrusel-seccion {
     padding: 30px 0;
-    background: #181925;
+    background: rgba(24, 25, 37, 0.95);
     color: #fff;
     text-align: center;
     overflow: hidden;
@@ -273,12 +277,12 @@ main {
 
 .catalogo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
 }
 
 .producto-card {
-    background: #2a2b3d;
+    background: rgba(42, 43, 61, 0.9);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
@@ -298,11 +302,15 @@ main {
     border: 2px solid #ff4081;
 }
 
+/* Control del tamaño de las imágenes del catálogo */
 .img-wrapper {
     width: 100%;
-    height: 250px;
+    height: 200px;
     overflow: hidden;
     background: #181925;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .img-wrapper img {
@@ -318,15 +326,15 @@ main {
 }
 
 .producto-card h3 {
-    font-size: 1.15rem;
-    padding: 15px 15px 5px;
+    font-size: 1.1rem;
+    padding: 12px 15px 5px;
     color: #ffffff;
 }
 
 .producto-card p {
-    font-size: 0.88rem;
+    font-size: 0.85rem;
     color: #b0b3c6;
-    padding: 0 15px 15px;
+    padding: 0 15px 12px;
     flex-grow: 1;
 }
 
@@ -336,10 +344,10 @@ main {
     color: #ffffff;
     text-align: center;
     text-decoration: none;
-    padding: 12px;
+    padding: 10px;
     font-weight: bold;
-    font-size: 0.9rem;
-    margin: 10px 15px 15px;
+    font-size: 0.88rem;
+    margin: 10px 12px 15px;
     border-radius: 8px;
     transition: background 0.3s ease, transform 0.2s ease;
 }
@@ -359,13 +367,13 @@ main {
 .ba-slider {
     position: relative;
     width: 100%;
-    height: 250px;
+    height: 200px;
     overflow: hidden;
 }
 
 .ba-slider img {
     width: 100%;
-    height: 250px;
+    height: 200px;
     object-fit: cover;
     display: block;
 }
@@ -513,7 +521,7 @@ main {
    10. PIE DE PÁGINA (FOOTER)
    ========================================== */
 footer {
-    background-color: #181925;
+    background-color: rgba(24, 25, 37, 0.95);
     color: #a0a0b0;
     text-align: center;
     padding: 25px 20px;

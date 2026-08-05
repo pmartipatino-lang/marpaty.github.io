@@ -20,7 +20,7 @@ body {
 
 /* HERO */
 .hero {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding: 20px 10px;
 }
 
@@ -82,6 +82,89 @@ body {
 .btn-navidad:hover {
     background-color: #a00000;
     transform: scale(1.05);
+}
+
+/* SECCIÓN LÍNEAS DE ACABADO (BÁSICA VS PREMIUM) */
+.acabados-seccion {
+    max-width: 1100px;
+    margin: 20px auto 40px auto;
+}
+
+.acabados-container {
+    background: rgba(18, 18, 18, 0.95);
+    border: 1px solid rgba(255, 215, 0, 0.4);
+    border-radius: 15px;
+    padding: 25px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+}
+
+.acabados-container h2 {
+    color: #ffd700;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.acabados-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    text-align: left;
+}
+
+.acabado-card {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.acabado-card.premium {
+    border: 1px solid #ffd700;
+    background: rgba(30, 25, 10, 0.7);
+}
+
+.acabado-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.badge-acabado {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 12px;
+    background-color: #333;
+    color: #ddd;
+    margin-bottom: 12px;
+}
+
+.badge-acabado.gold {
+    background: linear-gradient(135deg, #ffd700, #b8860b);
+    color: #000;
+}
+
+.acabado-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.acabado-card ul li {
+    font-size: 0.88rem;
+    color: #cccccc;
+    margin-bottom: 8px;
+    line-height: 1.4;
+    position: relative;
+    padding-left: 18px;
+}
+
+.acabado-card ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #ffd700;
+    font-weight: bold;
 }
 
 /* CARRUSEL INFINITO */
@@ -179,13 +262,18 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
 }
 
+.producto-card.destacado {
+    border: 2px solid #ffd700;
+    background-color: rgba(25, 22, 10, 0.95);
+}
+
 .producto-card:hover {
     transform: translateY(-5px);
     border-color: #ffd700;
     box-shadow: 0 8px 20px rgba(255, 215, 0, 0.25);
 }
 
-/* CONTENEDOR E IMÁGENES AJUSTADAS (SIN RECORTE DE DETALLES) */
+/* CONTENEDOR E IMÁGENES AJUSTADAS */
 .img-wrapper {
     width: 100%;
     height: 160px;

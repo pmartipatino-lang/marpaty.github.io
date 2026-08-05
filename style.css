@@ -1,5 +1,5 @@
 /* ==========================================
-   1. RESET & ESTILOS GENERALES
+   1. RESET & ESTILOS GENERALES (TEMA OSCURO)
    ========================================== */
 * {
     margin: 0;
@@ -9,8 +9,8 @@
 }
 
 body {
-    background-color: #f4f6f9;
-    color: #333;
+    background-color: #202131; /* Fondo oscuro original */
+    color: #ffffff;
     line-height: 1.6;
 }
 
@@ -18,11 +18,10 @@ body {
    2. ENCABEZADO (HERO) & AVISO DE STOCK
    ========================================== */
 .hero {
-    background: linear-gradient(135deg, #1e1e2f 0%, #2a2a40 100%);
+    background-color: #202131;
     color: #ffffff;
     text-align: center;
     padding: 40px 20px 30px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .logo-container {
@@ -30,54 +29,53 @@ body {
 }
 
 .logo-img {
-    max-width: 150px;
+    max-width: 160px;
     height: auto;
     border-radius: 50%;
-    border: 4px solid #ffffff;
+    border: 3px solid #ffffff;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .logo-img:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(255, 64, 129, 0.6);
 }
 
 .hero h2 {
     font-size: 1.8rem;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     color: #ffffff;
 }
 
 .ubicacion-envios {
     font-size: 0.95rem;
     color: #cfd8dc;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-/* Contenedor del Aviso de Stock/Tiempos */
+/* Contenedor del Aviso de Stock/Tiempos (Diseño de la imagen) */
 .aviso-stock-container {
     max-width: 750px;
-    margin: 20px auto;
+    margin: 20px auto 25px auto;
     padding: 0 10px;
 }
 
 .descripcion-hero {
     font-size: 1.05rem;
     color: #e0e0e0;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .badge-tiempos {
     background-color: #ffffff;
-    color: #2c3e50;
-    padding: 18px 22px;
-    border-radius: 12px;
+    color: #333333;
+    padding: 20px 25px;
+    border-radius: 14px;
     border-left: 6px solid #ff4081;
     font-size: 0.95rem;
     line-height: 1.6;
     text-align: left;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
 .badge-tiempos strong {
@@ -85,20 +83,20 @@ body {
 }
 
 .navidad-container {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .btn-navidad {
     background: linear-gradient(45deg, #2e7d32, #4caf50);
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 0.95rem;
     font-weight: bold;
-    border-radius: 25px;
+    border-radius: 30px;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 .btn-navidad:hover {
@@ -111,7 +109,7 @@ body {
    ========================================== */
 .acabados-seccion {
     padding: 40px 20px;
-    background-color: #ffffff;
+    background-color: #202131;
 }
 
 .acabados-container {
@@ -121,9 +119,9 @@ body {
 }
 
 .acabados-container h2 {
-    font-size: 1.6rem;
-    color: #1e1e2f;
-    margin-bottom: 25px;
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 30px;
 }
 
 .acabados-grid {
@@ -136,28 +134,29 @@ body {
     padding: 25px;
     border-radius: 15px;
     text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .acabado-card.basica {
-    background: #eef2f5;
-    border: 1px solid #dcdfe3;
+    background: #2a2b3d;
+    border: 1px solid #3a3b50;
+    color: #ffffff;
 }
 
 .acabado-card.premium {
-    background: #fff9e6;
+    background: #2d2a20;
     border: 2px solid #ffc107;
+    color: #ffffff;
 }
 
 .acabado-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 .acabado-card h3 {
     font-size: 1.3rem;
     margin-bottom: 8px;
-    color: #2c3e50;
+    color: #ffffff;
 }
 
 .badge-acabado {
@@ -186,13 +185,14 @@ body {
     margin-bottom: 10px;
     position: relative;
     padding-left: 20px;
+    color: #dddddd;
 }
 
 .acabado-card li::before {
     content: "✔";
     position: absolute;
     left: 0;
-    color: #2e7d32;
+    color: #4caf50;
     font-weight: bold;
 }
 
@@ -201,14 +201,14 @@ body {
    ========================================== */
 .carrusel-seccion {
     padding: 30px 0;
-    background: #1e1e2f;
+    background: #181925;
     color: #fff;
     text-align: center;
     overflow: hidden;
 }
 
 .carrusel-seccion h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 20px;
 }
 
@@ -236,7 +236,7 @@ body {
     object-fit: cover;
     border-radius: 10px;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     transition: transform 0.3s ease;
 }
 
@@ -264,7 +264,7 @@ main {
 
 .catalogo-seccion h2 {
     font-size: 1.6rem;
-    color: #1e1e2f;
+    color: #ffffff;
     border-bottom: 3px solid #ff4081;
     display: inline-block;
     padding-bottom: 5px;
@@ -278,20 +278,20 @@ main {
 }
 
 .producto-card {
-    background: #ffffff;
+    background: #2a2b3d;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #eef0f2;
+    border: 1px solid #3a3b50;
 }
 
 .producto-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
 }
 
 .producto-card.destacado {
@@ -302,7 +302,7 @@ main {
     width: 100%;
     height: 250px;
     overflow: hidden;
-    background: #f8f9fa;
+    background: #181925;
 }
 
 .img-wrapper img {
@@ -320,12 +320,12 @@ main {
 .producto-card h3 {
     font-size: 1.15rem;
     padding: 15px 15px 5px;
-    color: #2c3e50;
+    color: #ffffff;
 }
 
 .producto-card p {
     font-size: 0.88rem;
-    color: #666;
+    color: #b0b3c6;
     padding: 0 15px 15px;
     flex-grow: 1;
 }
@@ -404,7 +404,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
 
 /* ==========================================
@@ -415,12 +415,12 @@ main {
 }
 
 .card-consulta-custom {
-    background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+    background: linear-gradient(135deg, #4a3ba8 0%, #6c5ce7 100%);
     color: #fff;
     text-align: center;
     padding: 35px 20px;
     border-radius: 15px;
-    box-shadow: 0 6px 18px rgba(108, 92, 231, 0.25);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 .card-consulta-custom h3 {
@@ -431,14 +431,16 @@ main {
 .card-consulta-custom p {
     font-size: 1rem;
     margin-bottom: 20px;
+    color: #e0e0e0;
 }
 
 .btn-custom {
     display: inline-block;
     background-color: #ffffff;
-    color: #6c5ce7;
+    color: #4a3ba8;
     width: auto;
     padding: 12px 25px;
+}
 
 .btn-custom:hover {
     background-color: #f1f0ff;
@@ -456,7 +458,7 @@ main {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .modal-contenido {
@@ -497,7 +499,7 @@ main {
     border-radius: 30px;
     font-weight: bold;
     font-size: 0.95rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     z-index: 999;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
@@ -511,7 +513,7 @@ main {
    10. PIE DE PÁGINA (FOOTER)
    ========================================== */
 footer {
-    background-color: #1e1e2f;
+    background-color: #181925;
     color: #a0a0b0;
     text-align: center;
     padding: 25px 20px;

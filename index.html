@@ -37,165 +37,93 @@
         </div>
     </header>
 
+    <!-- TARJETA INFORMATIVA: LÍNEAS DE ACABADO -->
+    <section class="acabados-seccion">
+        <div class="acabados-container">
+            <h2>⭐ Elige tu Tipo de Escultura ⭐</h2>
+            <div class="acabados-grid">
+                <div class="acabado-card basica">
+                    <h3>🎈 Línea Básica</h3>
+                    <span class="badge-acabado">Ideal para Eventos & Decoración</span>
+                    <ul>
+                        <li>Elaborada en opalina de alto gramaje o cartón ligero pintado a mano.</li>
+                        <li>Estructura liviana perfecta para mesas temáticas o exhibición temporal.</li>
+                        <li>Excelente acabado estético para recuerdos inolvidables.</li>
+                    </ul>
+                </div>
+                <div class="acabado-card premium">
+                    <h3>👑 Línea Premium Coleccionable</h3>
+                    <span class="badge-acabado gold">Edición Coleccionista</span>
+                    <ul>
+                        <li>Cartón reforzado de alta durabilidad pintado artesanalmente a mano.</li>
+                        <li>Incluye <strong>Caja Personalizada</strong> de presentación.</li>
+                        <li><strong>Detalles extras:</strong> Llavero exclusivo + minihistorieta/tarjeta del personaje.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CARRUSEL EN MOVIMIENTO CONTINUO -->
     <section class="carrusel-seccion">
         <h2>✨ Galería Destacada ✨</h2>
         <div class="slider">
             <div class="slide-track">
                 <!-- Tira 1 -->
+                <div class="slide"><img src="Screenshot_3.jpg" alt="Joker Porta Vino" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="Screenshot_2.png" alt="Trofeo Para Mamá" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="Screenshot_8.png" alt="Mickey Explorador" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="Screenshot_9.png" alt="Pluto Explorador" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="Screenshot_10.jpg" alt="Lola Bunny 3D" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="Screenshot_5.jpg" alt="Conejito Lector" onclick="abrirModal(this.src)"></div>
                 <div class="slide"><img src="chains.jpeg" alt="Chainsaw Man" onclick="abrirModal(this.src)"></div>
                 <div class="slide"><img src="gatito.jpeg" alt="Gatito Místico" onclick="abrirModal(this.src)"></div>
                 <div class="slide"><img src="ghostface_transparent.png" alt="Ghostface Cine" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="ghostface2_transparent.png" alt="Ghostface Clásico" onclick="abrirModal(this.src)"></div>
                 <div class="slide"><img src="goku.jpeg" alt="Goku" onclick="abrirModal(this.src)"></div>
                 <div class="slide"><img src="harry.jpeg" alt="Harry Potter" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="luna.jpeg" alt="Sailor Moon" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="caballo.jpg" alt="Caballo Proceso" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="caballo1.jpg" alt="Caballo Resultado" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="osito.jpg" alt="Osito 3D" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="niños.png" alt="Colección Niños" onclick="abrirModal(this.src)"></div>
 
                 <!-- Tira 2 (Duplicado) -->
+                <div class="slide"><img src="Screenshot_3.jpg" alt="Joker Porta Vino" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="Screenshot_2.png" alt="Trofeo Para Mamá" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="Screenshot_8.png" alt="Mickey Explorador" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="Screenshot_9.png" alt="Pluto Explorador" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="Screenshot_10.jpg" alt="Lola Bunny 3D" onclick="abrirModal(this.src)"></div>
+                <div class="slide"><img src="Screenshot_5.jpg" alt="Conejito Lector" onclick="abrirModal(this.src)"></div>
                 <div class="slide"><img src="chains.jpeg" alt="Chainsaw Man" onclick="abrirModal(this.src)"></div>
                 <div class="slide"><img src="gatito.jpeg" alt="Gatito Místico" onclick="abrirModal(this.src)"></div>
                 <div class="slide"><img src="ghostface_transparent.png" alt="Ghostface Cine" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="ghostface2_transparent.png" alt="Ghostface Clásico" onclick="abrirModal(this.src)"></div>
                 <div class="slide"><img src="goku.jpeg" alt="Goku" onclick="abrirModal(this.src)"></div>
                 <div class="slide"><img src="harry.jpeg" alt="Harry Potter" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="luna.jpeg" alt="Sailor Moon" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="caballo.jpg" alt="Caballo Proceso" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="caballo1.jpg" alt="Caballo Resultado" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="osito.jpg" alt="Osito 3D" onclick="abrirModal(this.src)"></div>
-                <div class="slide"><img src="niños.png" alt="Colección Niños" onclick="abrirModal(this.src)"></div>
             </div>
         </div>
     </section>
 
     <!-- CATÁLOGO COMPLETO ORGANIZADO POR CATEGORÍAS -->
     <main>
-        <!-- SECCIÓN: ESPECIAL NAVIDAD -->
-        <section id="navidad" class="catalogo-seccion">
-            <h2>🎄 Especial Navidad 🎄</h2>
+
+        <!-- SECCIÓN: EDICIONES ESPECIALES Y PORTAVINOS -->
+        <section id="especiales" class="catalogo-seccion">
+            <h2>🍷 Ediciones Especiales & Funcionales 🍷</h2>
             <div class="catalogo-grid">
 
-                <article class="producto-card">
+                <article class="producto-card destacado">
                     <div class="img-wrapper">
-                        <img src="BOTASS DE SANTA .jpg" alt="Botas de Santa" onclick="abrirModal(this.src)">
+                        <img src="Screenshot_3.jpg" alt="Joker Porta Vino 3D" onclick="abrirModal(this.src)">
                     </div>
-                    <h3>Botas de Santa</h3>
-                    <p>Adornos temáticos ideales para dulceros o decoración Navideña.</p>
-                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Botas%20de%20Santa" target="_blank" class="btn-solicitar">
+                    <h3>Busto Joker (Porta Vino)</h3>
+                    <p>Escultura multifuncional diseñada para guardar y exhibir botellas de vino. Disponible en versión Básica o Premium Coleccionable con caja temática.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Busto%20Joker%20Porta%20Vino" target="_blank" class="btn-solicitar">
                         📦 ¡Solicita el tuyo aquí!
                     </a>
                 </article>
 
                 <article class="producto-card">
                     <div class="img-wrapper">
-                        <img src="COLGANTE NAVIDAD.jpg" alt="Colgante Muñecos de Nieve" onclick="abrirModal(this.src)">
+                        <img src="Screenshot_2.png" alt="Trofeo Para Mamá #1" onclick="abrirModal(this.src)">
                     </div>
-                    <h3>Colgantes Muñecos de Nieve</h3>
-                    <p>Figuras decorativas colgantes en tonos navideños.</p>
-                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Colgantes%20Muñecos%20de%20Nieve" target="_blank" class="btn-solicitar">
-                        📦 ¡Solicita el tuyo aquí!
-                    </a>
-                </article>
-
-                <article class="producto-card">
-                    <div class="img-wrapper">
-                        <img src="RENO.jpg" alt="Reno Navideño 3D" onclick="abrirModal(this.src)">
-                    </div>
-                    <h3>Reno Navideño 3D</h3>
-                    <p>Escultura poligonal de reno con gorro y bastón de caramelo.</p>
-                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Reno%20Navideño%203D" target="_blank" class="btn-solicitar">
-                        📦 ¡Solicita el tuyo aquí!
-                    </a>
-                </article>
-
-                <article class="producto-card">
-                    <div class="img-wrapper">
-                        <img src="SANTA EN CARRO.jpg" alt="Santa en Trineo" onclick="abrirModal(this.src)">
-                    </div>
-                    <h3>Santa en Trineo</h3>
-                    <p>Figura detallada de Santa Claus con su reno y trineo.</p>
-                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Santa%20en%20Trineo" target="_blank" class="btn-solicitar">
-                        📦 ¡Solicita el tuyo aquí!
-                    </a>
-                </article>
-
-                <article class="producto-card">
-                    <div class="img-wrapper">
-                        <img src="SANTA EN MOTO.jpg" alt="Santa Motociclista" onclick="abrirModal(this.src)">
-                    </div>
-                    <h3>Santa Motociclista</h3>
-                    <p>Diseño divertido y moderno de Santa entregando regalos en moto.</p>
-                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Santa%20Motociclista" target="_blank" class="btn-solicitar">
-                        📦 ¡Solicita el tuyo aquí!
-                    </a>
-                </article>
-
-                <article class="producto-card">
-                    <div class="img-wrapper">
-                        <img src="TREN NAVIDEÑO.jpg" alt="Tren Navideño Dulcero" onclick="abrirModal(this.src)">
-                    </div>
-                    <h3>Tren Navideño 3D</h3>
-                    <p>Locomotora con vagones organizadores / dulceros estilo caramelo.</p>
-                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Tren%20Navideño%203D" target="_blank" class="btn-solicitar">
-                        📦 ¡Solicita el tuyo aquí!
-                    </a>
-                </article>
-
-            </div>
-        </section>
-
-        <!-- SECCIÓN: COLECCIÓN ANIMALES -->
-        <section id="animales" class="catalogo-seccion">
-            <h2>🐾 Colección Animales 🐾</h2>
-            <div class="catalogo-grid">
-
-                <article class="producto-card">
-                    <div class="img-wrapper">
-                        <img src="PERRO.jpg" alt="Perro Bulldog 3D" onclick="abrirModal(this.src)">
-                    </div>
-                    <h3>Bulldog Guardián 3D</h3>
-                    <p>Escultura geométrica de bulldog con collar de picos.</p>
-                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Bulldog%20Guardián%203D" target="_blank" class="btn-solicitar">
-                        📦 ¡Solicita el tuyo aquí!
-                    </a>
-                </article>
-
-                <article class="producto-card">
-                    <div class="img-wrapper">
-                        <img src="gatito.jpeg" alt="Gatito Místico 3D" onclick="abrirModal(this.src)">
-                    </div>
-                    <h3>Gatito Místico & Cuervo</h3>
-                    <p>Pieza en tonos azules con cuervo y detalles expresivos.</p>
-                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Gatito%20Místico" target="_blank" class="btn-solicitar">
-                        📦 ¡Solicita el tuyo aquí!
-                    </a>
-                </article>
-
-                <article class="producto-card card-slider-comparativo">
-                    <div class="ba-slider" id="caballoSlider">
-                        <img src="caballo1.jpg" alt="Caballo Resultado Final">
-                        <div class="resize">
-                            <img src="caballo.jpg" alt="Caballo Estructura Base">
-                        </div>
-                        <span class="handle"></span>
-                    </div>
-                    <h3>Escultura Caballo 3D (Proceso)</h3>
-                    <p>Mueve la flecha amarilla para ver la estructura base vs resultado final.</p>
-                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Escultura%20Caballo%203D" target="_blank" class="btn-solicitar">
-                        📦 ¡Solicita el tuyo aquí!
-                    </a>
-                </article>
-
-                <article class="producto-card">
-                    <div class="img-wrapper">
-                        <img src="osito.jpg" alt="Osito 3D" onclick="abrirModal(this.src)">
-                    </div>
-                    <h3>Tierno Osito 3D</h3>
-                    <p>Figura decorativa en papel 3D ideal para obsequios.</p>
-                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Tierno%20Osito%203D" target="_blank" class="btn-solicitar">
+                    <h3>Trofeo #1 Mamá (Chancleta Gold)</h3>
+                    <p>Divertido trofeo de la mítica chancleta en acabado dorado sobre pedestal. El regalo ideal para homenajear a mamá.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Trofeo%20Para%20Mamá" target="_blank" class="btn-solicitar">
                         📦 ¡Solicita el tuyo aquí!
                     </a>
                 </article>
@@ -207,6 +135,39 @@
         <section id="personajes" class="catalogo-seccion">
             <h2>✨ Personajes & Anime ✨</h2>
             <div class="catalogo-grid">
+
+                <article class="producto-card">
+                    <div class="img-wrapper">
+                        <img src="Screenshot_8.png" alt="Mickey Explorador 3D" onclick="abrirModal(this.src)">
+                    </div>
+                    <h3>Mickey Explorador 3D</h3>
+                    <p>Figura poligonal de Mickey listo para la aventura con traje de safari y mochila.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Mickey%20Explorador" target="_blank" class="btn-solicitar">
+                        📦 ¡Solicita el tuyo aquí!
+                    </a>
+                </article>
+
+                <article class="producto-card">
+                    <div class="img-wrapper">
+                        <img src="Screenshot_9.png" alt="Pluto Explorador 3D" onclick="abrirModal(this.src)">
+                    </div>
+                    <h3>Pluto Explorador 3D</h3>
+                    <p>El fiel compañero Pluto equipado con sombrero y mochila de expedición.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Pluto%20Explorador" target="_blank" class="btn-solicitar">
+                        📦 ¡Solicita el tuyo aquí!
+                    </a>
+                </article>
+
+                <article class="producto-card">
+                    <div class="img-wrapper">
+                        <img src="Screenshot_10.jpg" alt="Lola Bunny 3D" onclick="abrirModal(this.src)">
+                    </div>
+                    <h3>Lola Bunny Space Jam 3D</h3>
+                    <p>Escultura geométrica estilizada de Lola Bunny con atuendo deportivo.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Lola%20Bunny" target="_blank" class="btn-solicitar">
+                        📦 ¡Solicita el tuyo aquí!
+                    </a>
+                </article>
 
                 <article class="producto-card">
                     <div class="img-wrapper">
@@ -281,6 +242,147 @@
                     <h3>Colección Infantil</h3>
                     <p>Cajas y figuras temáticas personalizadas para eventos.</p>
                     <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Colección%20Infantil" target="_blank" class="btn-solicitar">
+                        📦 ¡Solicita el tuyo aquí!
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN: COLECCIÓN ANIMALES -->
+        <section id="animales" class="catalogo-seccion">
+            <h2>🐾 Colección Animales 🐾</h2>
+            <div class="catalogo-grid">
+
+                <article class="producto-card">
+                    <div class="img-wrapper">
+                        <img src="Screenshot_5.jpg" alt="Conejito Lector 3D" onclick="abrirModal(this.src)">
+                    </div>
+                    <h3>Conejito Lector 3D</h3>
+                    <p>Divertida y única escultura de conejito leyendo en el inodoro.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Conejito%20Lector" target="_blank" class="btn-solicitar">
+                        📦 ¡Solicita el tuyo aquí!
+                    </a>
+                </article>
+
+                <article class="producto-card">
+                    <div class="img-wrapper">
+                        <img src="PERRO.jpg" alt="Perro Bulldog 3D" onclick="abrirModal(this.src)">
+                    </div>
+                    <h3>Bulldog Guardián 3D</h3>
+                    <p>Escultura geométrica de bulldog con collar de picos.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Bulldog%20Guardián%203D" target="_blank" class="btn-solicitar">
+                        📦 ¡Solicita el tuyo aquí!
+                    </a>
+                </article>
+
+                <article class="producto-card">
+                    <div class="img-wrapper">
+                        <img src="gatito.jpeg" alt="Gatito Místico 3D" onclick="abrirModal(this.src)">
+                    </div>
+                    <h3>Gatito Místico & Cuervo</h3>
+                    <p>Pieza en tonos azules con cuervo y detalles expresivos.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Gatito%20Místico" target="_blank" class="btn-solicitar">
+                        📦 ¡Solicita el tuyo aquí!
+                    </a>
+                </article>
+
+                <article class="producto-card card-slider-comparativo">
+                    <div class="ba-slider" id="caballoSlider">
+                        <img src="caballo1.jpg" alt="Caballo Resultado Final">
+                        <div class="resize">
+                            <img src="caballo.jpg" alt="Caballo Estructura Base">
+                        </div>
+                        <span class="handle"></span>
+                    </div>
+                    <h3>Escultura Caballo 3D (Proceso)</h3>
+                    <p>Mueve la flecha amarilla para ver la estructura base vs resultado final.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Escultura%20Caballo%203D" target="_blank" class="btn-solicitar">
+                        📦 ¡Solicita el tuyo aquí!
+                    </a>
+                </article>
+
+                <article class="producto-card">
+                    <div class="img-wrapper">
+                        <img src="osito.jpg" alt="Osito 3D" onclick="abrirModal(this.src)">
+                    </div>
+                    <h3>Tierno Osito 3D</h3>
+                    <p>Figura decorativa en papel 3D ideal para obsequios.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Tierno%20Osito%203D" target="_blank" class="btn-solicitar">
+                        📦 ¡Solicita el tuyo aquí!
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN: ESPECIAL NAVIDAD -->
+        <section id="navidad" class="catalogo-seccion">
+            <h2>🎄 Especial Navidad 🎄</h2>
+            <div class="catalogo-grid">
+
+                <article class="producto-card">
+                    <div class="img-wrapper">
+                        <img src="BOTASS DE SANTA .jpg" alt="Botas de Santa" onclick="abrirModal(this.src)">
+                    </div>
+                    <h3>Botas de Santa</h3>
+                    <p>Adornos temáticos ideales para dulceros o decoración Navideña.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Botas%20de%20Santa" target="_blank" class="btn-solicitar">
+                        📦 ¡Solicita el tuyo aquí!
+                    </a>
+                </article>
+
+                <article class="producto-card">
+                    <div class="img-wrapper">
+                        <img src="COLGANTE NAVIDAD.jpg" alt="Colgante Muñecos de Nieve" onclick="abrirModal(this.src)">
+                    </div>
+                    <h3>Colgantes Muñecos de Nieve</h3>
+                    <p>Figuras decorativas colgantes en tonos navideños.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Colgantes%20Muñecos%20de%20Nieve" target="_blank" class="btn-solicitar">
+                        📦 ¡Solicita el tuyo aquí!
+                    </a>
+                </article>
+
+                <article class="producto-card">
+                    <div class="img-wrapper">
+                        <img src="RENO.jpg" alt="Reno Navideño 3D" onclick="abrirModal(this.src)">
+                    </div>
+                    <h3>Reno Navideño 3D</h3>
+                    <p>Escultura poligonal de reno con gorro y bastón de caramelo.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Reno%20Navideño%203D" target="_blank" class="btn-solicitar">
+                        📦 ¡Solicita el tuyo aquí!
+                    </a>
+                </article>
+
+                <article class="producto-card">
+                    <div class="img-wrapper">
+                        <img src="SANTA EN CARRO.jpg" alt="Santa en Trineo" onclick="abrirModal(this.src)">
+                    </div>
+                    <h3>Santa en Trineo</h3>
+                    <p>Figura detallada de Santa Claus con su reno y trineo.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Santa%20en%20Trineo" target="_blank" class="btn-solicitar">
+                        📦 ¡Solicita el tuyo aquí!
+                    </a>
+                </article>
+
+                <article class="producto-card">
+                    <div class="img-wrapper">
+                        <img src="SANTA EN MOTO.jpg" alt="Santa Motociclista" onclick="abrirModal(this.src)">
+                    </div>
+                    <h3>Santa Motociclista</h3>
+                    <p>Diseño divertido y moderno de Santa entregando regalos en moto.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Santa%20Motociclista" target="_blank" class="btn-solicitar">
+                        📦 ¡Solicita el tuyo aquí!
+                    </a>
+                </article>
+
+                <article class="producto-card">
+                    <div class="img-wrapper">
+                        <img src="TREN NAVIDEÑO.jpg" alt="Tren Navideño Dulcero" onclick="abrirModal(this.src)">
+                    </div>
+                    <h3>Tren Navideño 3D</h3>
+                    <p>Locomotora con vagones organizadores / dulceros estilo caramelo.</p>
+                    <a href="https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20solicitar:%20Tren%20Navideño%203D" target="_blank" class="btn-solicitar">
                         📦 ¡Solicita el tuyo aquí!
                     </a>
                 </article>

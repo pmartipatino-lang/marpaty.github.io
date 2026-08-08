@@ -1,5 +1,5 @@
 /* ==========================================
-   1. RESET & ESTILOS GENERALES
+   ESTILOS GENERALES Y BASE
    ========================================== */
 * {
     margin: 0;
@@ -9,24 +9,20 @@
 }
 
 body {
-    background-color: #202131;
-    background-image: url('mariposas.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover; /* Ajusta la imagen a la pantalla con nitidez sin estirarla excesivamente */
-    background-attachment: fixed;
-    color: #ffffff;
+    background-color: #0f111a;
+    color: #e2e8f0;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 /* ==========================================
-   2. ENCABEZADO (HERO) & AVISO DE STOCK
+   ENCABEZADO / HERO
    ========================================== */
 .hero {
-    background-color: transparent;
-    color: #ffffff;
     text-align: center;
-    padding: 40px 20px 30px;
+    padding: 40px 20px 20px;
+    background: linear-gradient(180deg, #1a1c29 0%, #0f111a 100%);
+    border-bottom: 2px solid #2a2d3d;
 }
 
 .logo-container {
@@ -34,10 +30,11 @@ body {
 }
 
 .logo-img {
-    max-width: 160px;
+    max-width: 180px;
     height: auto;
     border-radius: 50%;
-    border: 3px solid #ffffff;
+    border: 3px solid #ff7b00;
+    box-shadow: 0 0 15px rgba(255, 123, 0, 0.4);
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -47,203 +44,169 @@ body {
 }
 
 .hero h2 {
-    font-size: 1.8rem;
-    margin-bottom: 12px;
-    color: #ffffff;
+    color: #ff7b00;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
 }
 
 .ubicacion-envios {
     font-size: 0.95rem;
-    color: #cfd8dc;
-    margin-bottom: 20px;
+    color: #cbd5e1;
+    margin-bottom: 15px;
 }
 
-/* Contenedor del Aviso de Stock/Tiempos */
 .aviso-stock-container {
-    max-width: 750px;
-    margin: 20px auto 25px auto;
-    padding: 0 10px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    padding: 0 15px;
 }
 
 .descripcion-hero {
     font-size: 1.05rem;
-    color: #e0e0e0;
-    margin-bottom: 18px;
+    color: #94a3b8;
+    margin-bottom: 10px;
 }
 
 .badge-tiempos {
-    background-color: #ffffff;
-    color: #333333;
-    padding: 20px 25px;
-    border-radius: 14px;
-    border-left: 6px solid #ff4081;
-    font-size: 0.95rem;
-    line-height: 1.6;
+    background-color: #1e2235;
+    border-left: 4px solid #ff7b00;
+    padding: 12px 15px;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
     text-align: left;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-}
-
-.badge-tiempos strong {
-    color: #d81b60;
-}
-
-.navidad-container {
-    margin-top: 25px;
+    color: #cbd5e1;
 }
 
 .btn-navidad {
-    background: linear-gradient(45deg, #2e7d32, #4caf50);
-    color: #fff;
-    border: none;
-    padding: 12px 24px;
-    font-size: 0.95rem;
+    background: linear-gradient(135deg, #2e7d32, #1b5e20);
+    color: #ffffff;
+    border: 1px solid #4caf50;
+    padding: 10px 20px;
+    font-size: 1rem;
     font-weight: bold;
-    border-radius: 30px;
+    border-radius: 25px;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 10px rgba(46, 125, 50, 0.4);
+    transition: all 0.3s ease;
+    margin-top: 10px;
 }
 
 .btn-navidad:hover {
     transform: translateY(-2px);
-    background: linear-gradient(45deg, #1b5e20, #388e3c);
+    box-shadow: 0 6px 15px rgba(46, 125, 50, 0.6);
 }
 
 /* ==========================================
-   3. SECCIÓN: LÍNEAS DE ACABADO
+   ACABADOS (LÍNEA BÁSICA Y PREMIUM)
    ========================================== */
 .acabados-seccion {
-    padding: 40px 20px;
-    background-color: transparent;
-}
-
-.acabados-container {
-    max-width: 1000px;
+    padding: 30px 20px;
+    max-width: 1100px;
     margin: 0 auto;
-    text-align: center;
 }
 
 .acabados-container h2 {
-    font-size: 1.8rem;
-    color: #ffffff;
-    margin-bottom: 30px;
+    text-align: center;
+    color: #ff7b00;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
 }
 
 .acabados-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .acabado-card {
-    padding: 25px;
-    border-radius: 15px;
-    text-align: left;
-    transition: transform 0.3s ease;
-}
-
-.acabado-card.basica {
-    background: rgba(42, 43, 61, 0.9);
-    border: 1px solid #3a3b50;
-    color: #ffffff;
+    background-color: #1a1d2e;
+    border: 1px solid #2a2e45;
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 500px;
 }
 
 .acabado-card.premium {
-    background: rgba(45, 42, 32, 0.9);
-    border: 2px solid #ffc107;
-    color: #ffffff;
-}
-
-.acabado-card:hover {
-    transform: translateY(-5px);
+    border: 1px solid #ffd700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.15);
 }
 
 .acabado-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 8px;
+    font-size: 1.2rem;
     color: #ffffff;
+    margin-bottom: 5px;
 }
 
 .badge-acabado {
     display: inline-block;
-    background-color: #007bff;
-    color: #fff;
     font-size: 0.75rem;
-    font-weight: bold;
-    padding: 4px 10px;
-    border-radius: 12px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
+    padding: 3px 8px;
+    background-color: #334155;
+    color: #f8fafc;
+    border-radius: 4px;
+    margin-bottom: 12px;
 }
 
 .badge-acabado.gold {
-    background-color: #ff9800;
+    background-color: #b45309;
+    color: #fffbe0;
 }
 
 .acabado-card ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.acabado-card li {
+    list-style-position: inside;
     font-size: 0.9rem;
-    margin-bottom: 10px;
-    position: relative;
-    padding-left: 20px;
-    color: #dddddd;
+    color: #94a3b8;
 }
 
-.acabado-card li::before {
-    content: "✔";
-    position: absolute;
-    left: 0;
-    color: #4caf50;
-    font-weight: bold;
+.acabado-card ul li {
+    margin-bottom: 6px;
 }
 
 /* ==========================================
-   4. CARRUSEL EN MOVIMIENTO CONTINUO
+   CARRUSEL SLIDER CONTINUO
    ========================================== */
 .carrusel-seccion {
-    padding: 30px 0;
-    background: rgba(24, 25, 37, 0.95);
-    color: #fff;
-    text-align: center;
+    padding: 20px 0;
+    background-color: #141724;
     overflow: hidden;
 }
 
 .carrusel-seccion h2 {
-    font-size: 1.6rem;
-    margin-bottom: 20px;
+    text-align: center;
+    color: #ff7b00;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
 }
 
 .slider {
     width: 100%;
+    margin: auto;
     overflow: hidden;
     position: relative;
 }
 
 .slide-track {
     display: flex;
-    width: calc(200px * 22);
-    animation: scroll 30s linear infinite;
+    width: calc(150px * 22);
+    animation: scroll 35s linear infinite;
 }
 
 .slide {
-    width: 200px;
-    padding: 0 10px;
-    flex-shrink: 0;
+    width: 150px;
+    padding: 0 8px;
 }
 
 .slide img {
     width: 100%;
-    height: 140px;
-    object-fit: contain;
-    background: #181925;
-    border-radius: 10px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-    transition: transform 0.3s ease;
+    border: 1px solid #2a2e45;
+    transition: transform 0.2s;
 }
 
 .slide img:hover {
@@ -252,76 +215,64 @@ body {
 
 @keyframes scroll {
     0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-200px * 11)); }
+    100% { transform: translateX(calc(-150px * 11)); }
 }
 
 /* ==========================================
-   5. CATÁLOGO COMPLETO & TARJETAS
+   SECCIONES Y TARJETAS DE PRODUCTOS
    ========================================== */
-main {
+.catalogo-seccion {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
-.catalogo-seccion {
-    margin-bottom: 50px;
-}
-
 .catalogo-seccion h2 {
-    font-size: 1.6rem;
     color: #ffffff;
-    border-bottom: 3px solid #ff4081;
-    display: inline-block;
-    padding-bottom: 5px;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #ff7b00;
+    padding-bottom: 8px;
     margin-bottom: 25px;
 }
 
 .catalogo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 25px;
 }
 
 .producto-card {
-    background: rgba(42, 43, 61, 0.9);
+    background-color: #1a1d2e;
     border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border: 1px solid #2a2e45;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #3a3b50;
 }
 
 .producto-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    border-color: #ff7b00;
 }
 
-.producto-card.destacado {
-    border: 2px solid #ff4081;
-}
-
-/* Control del tamaño de las imágenes del catálogo */
 .img-wrapper {
     width: 100%;
-    height: 220px;
+    height: 240px;
     overflow: hidden;
-    background: #181925;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    background-color: #0f111a;
 }
 
 .img-wrapper img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    padding: 8px;
+    object-fit: cover;
     cursor: pointer;
-    transition: transform 0.4s ease;
+    transition: transform 0.3s ease;
 }
 
 .img-wrapper img:hover {
@@ -330,148 +281,81 @@ main {
 
 .producto-card h3 {
     font-size: 1.1rem;
-    padding: 12px 15px 5px;
-    color: #ffffff;
+    color: #f8fafc;
+    margin-bottom: 8px;
 }
 
 .producto-card p {
-    font-size: 0.85rem;
-    color: #b0b3c6;
-    padding: 0 15px 12px;
+    font-size: 0.88rem;
+    color: #94a3b8;
+    margin-bottom: 15px;
     flex-grow: 1;
 }
 
 .btn-solicitar {
     display: block;
+    width: 100%;
+    text-align: center;
     background-color: #25d366;
     color: #ffffff;
-    text-align: center;
     text-decoration: none;
-    padding: 10px;
     font-weight: bold;
-    font-size: 0.88rem;
-    margin: 10px 12px 15px;
-    border-radius: 8px;
-    transition: background 0.3s ease, transform 0.2s ease;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
 }
 
 .btn-solicitar:hover {
-    background-color: #1ebe57;
-    transform: translateY(-2px);
+    background-color: #1eb956;
 }
 
 /* ==========================================
-   6. SLIDER COMPARATIVO (ANTES Y DESPUÉS)
-   ========================================== */
-.card-slider-comparativo {
-    padding-top: 0;
-}
-
-.ba-slider {
-    position: relative;
-    width: 100%;
-    height: 220px;
-    overflow: hidden;
-    background: #181925;
-}
-
-.ba-slider img {
-    width: 100%;
-    height: 220px;
-    object-fit: contain;
-    display: block;
-}
-
-.ba-slider .resize {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 50%;
-    overflow: hidden;
-    background: #181925;
-}
-
-.ba-slider .handle {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 4px;
-    background: #ffc107;
-    cursor: ew-resize;
-}
-
-.ba-slider .handle::after {
-    content: "↔";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 30px;
-    height: 30px;
-    background: #ffc107;
-    color: #000;
-    font-weight: bold;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
-}
-
-/* ==========================================
-   7. ENCARGOS PERSONALIZADOS
+   SECCIÓN PERSONALIZADOS / MÁSCARAS
    ========================================== */
 .seccion-personalizados {
-    margin-top: 40px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
 }
 
 .card-consulta-custom {
-    background: linear-gradient(135deg, #4a3ba8 0%, #6c5ce7 100%);
-    color: #fff;
+    background: linear-gradient(135deg, #1e2235 0%, #141724 100%);
+    border: 2px dashed #ff7b00;
+    border-radius: 12px;
+    padding: 30px 20px;
     text-align: center;
-    padding: 35px 20px;
-    border-radius: 15px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 .card-consulta-custom h3 {
-    font-size: 1.5rem;
+    color: #ff7b00;
+    font-size: 1.3rem;
     margin-bottom: 10px;
 }
 
 .card-consulta-custom p {
-    font-size: 1rem;
+    color: #cbd5e1;
     margin-bottom: 20px;
-    color: #e0e0e0;
 }
 
 .btn-custom {
-    display: inline-block;
-    background-color: #ffffff;
-    color: #4a3ba8;
-    width: auto;
-    padding: 12px 25px;
-}
-
-.btn-custom:hover {
-    background-color: #f1f0ff;
+    max-width: 350px;
+    margin: 0 auto;
 }
 
 /* ==========================================
-   8. MODAL DE IMÁGENES
+   MODAL PARA AMPLIAR IMÁGENES
    ========================================== */
 .modal {
     display: none;
     position: fixed;
-    z-index: 1000;
+    z-index: 10000;
     padding-top: 50px;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
 .modal-contenido {
@@ -479,66 +363,55 @@ main {
     display: block;
     max-width: 90%;
     max-height: 80vh;
-    border-radius: 10px;
-    box-shadow: 0 5px 25px rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
 .cerrar-modal {
     position: absolute;
     top: 20px;
     right: 35px;
-    color: #fff;
+    color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
     cursor: pointer;
-    transition: color 0.2s ease;
-}
-
-.cerrar-modal:hover {
-    color: #ff4081;
 }
 
 /* ==========================================
-   9. BOTÓN FLOTANTE WHATSAPP
+   BOTÓN FLOTANTE WHATSAPP (ESTILO CARTÓN)
    ========================================== */
 .btn-whatsapp-carton {
     position: fixed;
-    bottom: 25px;
-    right: 25px;
-    background-color: #25d366;
+    bottom: 20px;
+    right: 20px;
+    background-color: #d97706;
     color: #ffffff;
-    text-decoration: none;
-    padding: 12px 20px;
+    padding: 12px 18px;
     border-radius: 30px;
+    text-decoration: none;
     font-weight: bold;
-    font-size: 0.95rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     z-index: 999;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: 2px solid #f59e0b;
+    transition: transform 0.2s;
 }
 
 .btn-whatsapp-carton:hover {
     transform: scale(1.08);
-    background-color: #1ebe57;
 }
 
 /* ==========================================
-   10. PIE DE PÁGINA (FOOTER)
+   FOOTER
    ========================================== */
 footer {
-    background-color: rgba(24, 25, 37, 0.95);
-    color: #a0a0b0;
     text-align: center;
-    padding: 25px 20px;
-    margin-top: 50px;
-    font-size: 0.9rem;
+    padding: 30px 20px;
+    background-color: #090a10;
+    border-top: 1px solid #1a1d2e;
+    font-size: 0.85rem;
+    color: #64748b;
 }
 
-footer .info-envios {
-    color: #ffffff;
-    margin-bottom: 8px;
-}
-
-footer .copyright {
-    font-size: 0.8rem;
+footer p {
+    margin-bottom: 5px;
 }

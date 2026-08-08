@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MarPaty | Diseños de Ensueños - Esculturas 3D Personalizadas</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="snow-container"></div>
+
+<header class="hero">
+  <div class="hero-top">
+    <div class="logo">MP</div>
+    <div>
+      <h1>MarPaty</h1>
+      <span>DISEÑOS DE ENSUEÑOS</span>
+    </div>
+  </div>
+  <h2>Esculturas 3D Personalizadas</h2>
+  <p class="ubicacion">📍 <strong>Corrientes Capital, Argentina</strong> — 🚚 Envíos a todo el país</p>
+  <p class="desc">Transformamos ideas y personajes en piezas artísticas coleccionables. Cada trabajo es único, elaborado con máxima dedicación y detalle artesanal.</p>
+  <div class="hero-badges">
+    <span>✨ 100% Hecho a mano</span>
+    <span>🎨 Pintado artesanal</span>
+    <span>📦 Embalaje reforzado</span>
+  </div>
+</header>
+
+<nav class="sticky-nav">
+  <button class="nav-btn active" data-filter="todos">Todos</button>
+  <button class="nav-btn" data-filter="graduacion">🎓 Graduación</button>
+  <button class="nav-btn" data-filter="especiales">🍷 Especiales</button>
+  <button class="nav-btn" data-filter="geek">👾 Geek & Anime</button>
+  <button class="nav-btn" data-filter="infantiles">🧸 Infantiles</button>
+  <button class="nav-btn" data-filter="navidad">🎄 Navidad</button>
+</nav>
+
+<section class="acabados">
+  <h2>⭐ Elige tu acabado</h2>
+  <div class="acabados-grid">
+    <div class="acabado-card">
+      <h3>🎈 Línea Básica</h3>
+      <span class="badge">Ideal para eventos</span>
+      <ul>
+        <li>Opalina de alto gramaje o cartón ligero pintado a mano</li>
+        <li>Estructura liviana para mesas temáticas o exhibición</li>
+        <li>Excelente acabado estético para recuerdos</li>
+      </ul>
+    </div>
+    <div class="acabado-card premium">
+      <h3>👑 Línea Premium Coleccionable</h3>
+      <span class="badge gold">Edición Coleccionista</span>
+      <ul>
+        <li>Cartón reforzado de alta durabilidad</li>
+        <li>Pintado artesanalmente con acrílicos premium</li>
+        <li>Detalles extras: llavero exclusivo + tarjeta del personaje</li>
+        <li>Terminación barnizada y embalaje premium</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<main>
+
+  <!-- GRADUACION -->
+  <section id="graduacion" class="catalogo-seccion featured" data-category="graduacion">
+    <div class="section-header">
+      <div>
+        <h2><span class="icon">🎓</span> Graduación 2025 / 2026 <span class="new-badge">NUEVO</span></h2>
+        <p>La estrella de la temporada. Centros de mesa, recuerdos y regalos para egresados. Personalizamos banda, cabello y colores de tu institución.</p>
+      </div>
+      <div class="section-count">2 diseños base • Infinitas combinaciones</div>
+    </div>
+    <div class="catalogo-grid">
+      <article class="producto-card grad-card" data-category="graduacion">
+        <div class="img-wrapper big"><img src="gradu_nina.jpg" alt="Graduada 3D" onclick="abrirModal(this.src, 'Graduada 3D')"></div>
+        <span class="card-badge">NUEVO • MÁS PEDIDO</span>
+        <h3>Graduada 3D - Low Poly</h3>
+        <p>Escultura 3D pelirroja con birrete y diploma. Banda dorada, toga personalizable. Ideal para jardines, primaria, secundaria y universidad.</p>
+        <ul class="features"><li>Altura: 15cm / 20cm / 25cm</li><li>Cabello, banda y diploma personalizables</li></ul>
+        <a href="https://wa.me/5493794509063?text=Hola%20MarPaty!%20Quiero%20la%20Graduada%203D%20personalizada" target="_blank" class="btn-solicitar">📦 Solicitar Graduada</a>
+      </article>
+      <article class="producto-card grad-card" data-category="graduacion">
+        <div class="img-wrapper big"><img src="gradu_nino.jpg" alt="Graduado 3D" onclick="abrirModal(this.src, 'Graduado 3D')"></div>
+        <span class="card-badge">NUEVO</span>
+        <h3>Graduado 3D - Low Poly</h3>
+        <p>Escultura 3D niño con birrete y diploma con moño. Toga y banda dorada, detalles low poly premium. Perfecto para egresaditos.</p>
+        <ul class="features"><li>Altura: 15cm / 20cm / 25cm</li><li>Colores de institución a elección</li></ul>
+        <a href="https://wa.me/5493794509063?text=Hola%20MarPaty!%20Quiero%20el%20Graduado%203D%20personalizado" target="_blank" class="btn-solicitar">📦 Solicitar Graduado</a>
+      </article>
+    </div>
+    <div class="grad-cta">
+      <p>🎓 <strong>¿Pack egresados?</strong> 10, 20 o 30 unidades con descuento. ¡Consulta precio mayorista por WhatsApp!</p>
+      <a href="https://wa.me/5493794509063?text=Hola!%20Consulta%20por%20pack%20egresados%20mayorista" class="btn-gold">Consultar Pack Mayorista</a>
+    </div>
+  </section>
+
+  <!-- ESPECIALES -->
+  <section class="catalogo-seccion" data-category="especiales">
+    <h2>🍷 Ediciones Especiales & Funcionales</h2>
+    <div class="catalogo-grid">
+      <article class="producto-card destacado" data-category="especiales">
+        <div class="img-wrapper"><div class="emoji-placeholder">🃏</div></div>
+        <h3>Busto Joker (Porta Vino)</h3>
+        <p>Multifuncional para botellas de vino. Base reforzada.</p>
+        <a href="#" class="btn-solicitar" onclick="event.preventDefault(); window.open('https://wa.me/5493794509063?text=Hola!%20Me%20interesa%20Busto%20Joker','_blank')">📦 Solicitar</a>
+      </article>
+      <article class="producto-card" data-category="especiales">
+        <div class="img-wrapper"><div class="emoji-placeholder">🦇</div></div>
+        <h3>Lámpara Batman Velador</h3>
+        <p>Luz cálida difusa, silueta low poly.</p>
+        <a href="https://wa.me/5493794509063?text=Hola!%20Lámpara%20Batman" target="_blank" class="btn-solicitar">📦 Solicitar</a>
+      </article>
+      <article class="producto-card" data-category="especiales">
+        <div class="img-wrapper"><div class="emoji-placeholder">♦️</div></div>
+        <h3>Harley Quinn Porta Botella</h3>
+        <p>Detalles en dorado y rojo, regalo temático.</p>
+        <a href="https://wa.me/5493794509063?text=Hola!%20Harley%20Quinn" target="_blank" class="btn-solicitar">📦 Solicitar</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- GEEK -->
+  <section class="catalogo-seccion" data-category="geek">
+    <h2>👾 Mundo Geek & Anime</h2>
+    <div class="catalogo-grid">
+      <article class="producto-card" data-category="geek"><div class="img-wrapper"><div class="emoji-placeholder">🐉</div></div><h3>Goku SSJ</h3><p>20cm, aura intercambiable</p><a href="https://wa.me/5493794509063?text=Goku" target="_blank" class="btn-solicitar">📦 Solicitar</a></article>
+      <article class="producto-card" data-category="geek"><div class="img-wrapper"><div class="emoji-placeholder">🪚</div></div><h3>Chainsaw Man</h3><p>Denji + Pochita set coleccionable</p><a href="https://wa.me/5493794509063?text=Chainsaw%20Man" target="_blank" class="btn-solicitar">📦 Solicitar</a></article>
+      <article class="producto-card" data-category="geek"><div class="img-wrapper"><div class="emoji-placeholder">🕷️</div></div><h3>Spider-Man Miles</h3><p>Pose dinámica sobre edificio</p><a href="https://wa.me/5493794509063?text=Spiderman" target="_blank" class="btn-solicitar">📦 Solicitar</a></article>
+    </div>
+  </section>
+
+  <!-- INFANTILES -->
+  <section class="catalogo-seccion" data-category="infantiles">
+    <h2>🧸 Infantiles & Decoración</h2>
+    <div class="catalogo-grid">
+      <article class="producto-card" data-category="infantiles"><div class="img-wrapper"><div class="emoji-placeholder">🦄</div></div><h3>Unicornio Pastel</h3><p>Ideal cuarto infantil 18cm</p><a href="https://wa.me/5493794509063?text=Unicornio" target="_blank" class="btn-solicitar">📦 Solicitar</a></article>
+      <article class="producto-card" data-category="infantiles"><div class="img-wrapper"><div class="emoji-placeholder">🧑‍🚀</div></div><h3>Astronauta Kids</h3><p>Nombre personalizable en traje</p><a href="https://wa.me/5493794509063?text=Astronauta" target="_blank" class="btn-solicitar">📦 Solicitar</a></article>
+    </div>
+  </section>
+
+  <!-- NAVIDAD -->
+  <section class="catalogo-seccion" data-category="navidad">
+    <div class="section-header">
+      <h2>🎄 Especial Navidad</h2>
+      <button class="btn-navidad" onclick="activarNieve()">❄️ Activar Nieve</button>
+    </div>
+    <div class="catalogo-grid">
+      <article class="producto-card" data-category="navidad"><div class="img-wrapper"><div class="emoji-placeholder">🎅</div></div><h3>Santa Low Poly</h3><p>Barba texturizada, saco aterciopelado</p><a href="https://wa.me/5493794509063?text=Santa" target="_blank" class="btn-solicitar">📦 Solicitar</a></article>
+      <article class="producto-card" data-category="navidad"><div class="img-wrapper"><div class="emoji-placeholder">🦌</div></div><h3>Reno Nariz Roja</h3><p>Cuernos con luz LED opcional</p><a href="https://wa.me/5493794509063?text=Reno" target="_blank" class="btn-solicitar">📦 Solicitar</a></article>
+      <article class="producto-card" data-category="navidad"><div class="img-wrapper"><div class="emoji-placeholder">🎄</div></div><h3>Pino Nevado</h3><p>Geométrico con nieve artesanal</p><a href="https://wa.me/5493794509063?text=Pino" target="_blank" class="btn-solicitar">📦 Solicitar</a></article>
+    </div>
+  </section>
+
+</main>
+
+<div id="modalImagen" class="modal" onclick="cerrarModal()">
+  <span class="cerrar-modal">&times;</span>
+  <img class="modal-contenido" id="imgAmpliada">
+  <div id="modalTitulo" class="modal-title"></div>
+</div>
+
+<a href="https://wa.me/5493794509063?text=Hola!%20Consulta%20general%20MarPaty" class="btn-whatsapp" target="_blank">💬 WhatsApp</a>
+
+<footer>
+  <p>📍 Corrientes Capital, Argentina | 🚚 Envíos a todo el país a cargo del comprador</p>
+  <p class="small">© 2026 MarPaty Diseños de Ensueños. Esculturas 3D Personalizadas.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

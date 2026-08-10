@@ -1,4 +1,3 @@
-
 function openM(src,title){
  const m=document.getElementById('modal');
  document.getElementById('modalImg').src=src;

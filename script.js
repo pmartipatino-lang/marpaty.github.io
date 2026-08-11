@@ -5,46 +5,18 @@ function openM(src,title){
  m.style.display='block';
 }
 function cerrarM(){document.getElementById('modal').style.display='none';}
-let nieveActiva=false;
-let intervaloNieve=null;
-
+let nieve=false;
 function activarNieve(){
- const btn = document.getElementById('btnNieve');
- const cont = document.getElementById('snow');
- if(nieveActiva){
-   // DESACTIVAR
-   nieveActiva=false;
-   btn.textContent='❄️ Activar Nieve';
-   btn.classList.remove('activo');
-   if(intervaloNieve) clearInterval(intervaloNieve);
-   intervaloNieve=null;
-   document.querySelectorAll('.copo').forEach(c=>c.remove());
-   cont.innerHTML='';
-   return;
- }
- // ACTIVAR
- nieveActiva=true;
- btn.textContent='☀️ Desactivar Nieve';
- btn.classList.add('activo');
- for(let i=0;i<35;i++) setTimeout(()=>crearCopo(), i*120);
- intervaloNieve=setInterval(()=>{ if(nieveActiva && document.querySelectorAll('.copo').length<80) crearCopo(); }, 180);
+ if(nieve) return; nieve=true;
+ for(let i=0;i<40;i++) setTimeout(crear,i*100);
 }
-
-function crearCopo(){
- if(!nieveActiva) return;
- const cont = document.getElementById('snow');
- const c=document.createElement('div'); c.className='copo'; 
- const simbolos=['❄','❅','❆'];
- c.textContent=simbolos[Math.floor(Math.random()*simbolos.length)];
- c.style.left=Math.random()*100+'vw'; 
- c.style.fontSize=(10+Math.random()*18)+'px';
- c.style.opacity=0.6+Math.random()*0.4; 
- c.style.animationDuration=(4+Math.random()*6)+'s';
- c.style.animationDelay=(Math.random()*1)+'s';
- cont.appendChild(c);
- setTimeout(()=>{c.remove();}, 10000);
+function crear(){
+ const c=document.createElement('div'); c.className='copo'; c.textContent='â„';
+ c.style.left=Math.random()*100+'vw'; c.style.fontSize=(8+Math.random()*14)+'px';
+ c.style.opacity=0.5+Math.random()*0.5; c.style.animationDuration=(3+Math.random()*4)+'s';
+ document.body.appendChild(c);
+ setTimeout(()=>{c.remove(); if(nieve) crear();},6000);
 }
-
 document.addEventListener('DOMContentLoaded',()=>{
  const btns=document.querySelectorAll('.nav button');
  const secs=document.querySelectorAll('.seccion');
